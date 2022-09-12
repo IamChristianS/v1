@@ -1,4 +1,5 @@
-document.onkeypress = function (\) {
-    \ = \ || window.event;
-    window.close();
-};
+document.addEventListener("keypress", function(event) {
+	if (event.keyCode == 192) {
+		window.close();
+	}
+});
