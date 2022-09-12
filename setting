@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dashboard</title>
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+	<body>
+		<center>
+			<!-- Header -->
+			<h2>Settings</h2>
+			<hr>
+			<table>
+				<thead class="navbar">       
+					<th><a href="index.html">Hub</a></th>
+					<th><a href="games.html">Games</a></th>
+					<th><a href="contact.html">Contact Me</a></th>
+					<th><a href="setting.html">Settings</a></th>
+				</thead>
+			</table>
+			<hr>
+			<!-- Body -->
+			
+		</center>
+		<!-- Footer -->
+		<hr>
+		<footer>&copy; Christian Santangelo 2022</footer>
+	</body>
+</html>
