@@ -8,5 +8,6 @@ navbar {
 	top: 0;
 	width: 100%;
 	display: inline;
+	overflow: hidden;
 }
 
