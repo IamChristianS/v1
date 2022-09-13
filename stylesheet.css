@@ -1,10 +1,22 @@
-navbar {
-	padding-right: 5px;
-	padding-left: 5px;
-}
-.header {
-	background-color: #b5d9f5;
-	top: 0;
-	width: 100%;
+.ul-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
 }
 
+.li-nav {
+  float: left;
+}
+
+.li a-nav {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.li a-nav:hover {
+  background-color: #111;
+}
