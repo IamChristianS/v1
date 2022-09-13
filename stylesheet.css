@@ -3,6 +3,18 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: #64829e;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Nav Bar */
 .body-text {
   display: flex;
   font-family: "Montserrat", sans-serif;
@@ -43,4 +55,4 @@ nav {
 .nav-links a:hover:not(.active) {
   background-color: #708CA8;
 }
-
+/* Nav Bar */
