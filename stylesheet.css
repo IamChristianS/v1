@@ -1,33 +1,48 @@
-/* Base */
-body {
-	font-family: "Lucida Console", "Courier New", monospace;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-/* Navigation Bar */
-.ul-nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #dbdbdb;
-	position: fixed;
-	top: 0;
-	width: 100%;
+.body-text {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  justify-content: center;
+  margin-top: 250px;
 }
-.li-nav {
-	float: left;
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: teal;
+  font-family: "Montserrat", sans-serif;
 }
-.a-nav {
-	display: block;
-	color: #ffffff;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
+.heading {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 20px;
 }
-.a-nav:hover {
-	background-color: #fae8ac;
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
 }
-.active {
- background-color: #f7c623;
+.nav-links li {
+  list-style: none;
 }
-  
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 14px 16px;
+}
+.nav-links a:hover:not(.active) {
+  background-color: lightseagreen;
+}
+.nav-links li a.active {
+  background-color: #4caf50;
+}
