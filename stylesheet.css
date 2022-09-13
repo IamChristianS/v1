@@ -41,8 +41,6 @@ nav {
   padding: 14px 16px;
 }
 .nav-links a:hover:not(.active) {
-  background-color: #6C88A4;
+  background-color: #708CA8;
 }
-.nav-links li a.active {
-  background-color: #4caf50;
-}
+
