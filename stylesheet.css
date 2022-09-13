@@ -4,10 +4,7 @@ navbar {
 }
 .header {
 	background-color: #b5d9f5;
-	position: fixed;
 	top: 0;
-	width: 100;
-	display: inline;
-	overflow: hidden;
+	width: 100%;
 }
 
