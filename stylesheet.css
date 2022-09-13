@@ -1,29 +1,33 @@
 /* Base */
 body {
-  font-family: "Lucida Console", "Courier New", monospace;
+	font-family: "Lucida Console", "Courier New", monospace;
 }
 
 /* Navigation Bar */
 .ul-nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dbdbdb;
-  position: fixed;
-  top: 0;
-  width: 100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #dbdbdb;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 .li-nav {
-  float: left;
+	float: left;
 }
 .a-nav {
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: #ffffff;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 .a-nav:hover {
-  background-color: #f7c623;
+	background-color: #fae8ac;
 }
+.active {
+ background-color: #f7c623;
+}
+  
