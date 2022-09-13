@@ -8,18 +8,25 @@
   top: 0;
   width: 100%;
 }
-
 .li-nav {
   float: left;
 }
-
 .a-nav {
   display: block;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 .li a-nav:hover {
-  background-color: #111;
+  background-color: #ffedb0;
 }
+.title-nav {
+  float: left;
+  display: block;
+  color: #f7c623;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
