@@ -1,3 +1,9 @@
+/* Base */
+.body {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+/* Navigation Bar */
 .ul-nav {
   list-style-type: none;
   margin: 0;
