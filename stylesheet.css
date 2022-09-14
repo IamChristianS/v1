@@ -15,7 +15,6 @@ footer{
 	width: 100vw;
 	padding-top: 40px;
 	color: #fff;
-	font-family: "Montserrat", sans-serif;
 }
 .footer-content{
 	display: flex;
@@ -23,6 +22,7 @@ footer{
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
+	font-family: "Montserrat", sans-serif;
 }
 .footer-menu{
 	margin-bottom: 20px;
@@ -40,6 +40,7 @@ footer{
 	padding: 6px 15px;
 	border-radius: 50px;
 	text-decoration: none;
+	font-family: "Montserrat", sans-serif;
 }
 .footer-menu ul li a:hover{
 	color: #fff;
