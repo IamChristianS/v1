@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+	background: WhiteSmoke;	
+}
+
 /* Footer */
 footer{
 	position: absolute;
