@@ -30,7 +30,8 @@ body {
 .game-table {
 	padding-left: auto;
 	padding-right: auto;
-	align: center
+	align: center;
+	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
 }
