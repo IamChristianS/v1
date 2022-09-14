@@ -1,3 +1,20 @@
+/*
+ ▄▀▀▄▀▀▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄         ▄█  ▄▀▀█▄▄▄▄  ▄▀▄▄▄▄   ▄▀▀▀█▀▀▄ 
+█   █   █ █   █   █ █      █  ▄▀▀▀█▀ ▐ ▐  ▄▀   ▐ █ █    ▌ █    █  ▐ 
+▐  █▀▀▀▀  ▐  █▀▀█▀  █      █ █    █      █▄▄▄▄▄  ▐ █      ▐   █     
+   █       ▄▀    █  ▀▄    ▄▀ ▐    █      █    ▌    █         █      
+ ▄▀       █     █     ▀▀▀▀     ▄   ▀▄   ▄▀▄▄▄▄    ▄▀▄▄▄▄▀  ▄▀       
+█         ▐     ▐               ▀▀▀▀    █    ▐   █     ▐  █         
+▐                                       ▐        ▐        ▐         
+ ▄▀▀▄ ▄▄   ▄▀▀▄ ▄▀▀▄  ▄▀▀█▄▄                                        
+█  █   ▄▀ █   █    █ ▐ ▄▀   █                                       
+▐  █▄▄▄█  ▐  █    █    █▄▄▄▀                                        
+   █   █    █    █     █   █                                        
+  ▄▀  ▄▀     ▀▄▄▄▄▀   ▄▀▄▄▄▀                                        
+ █   █               █    ▐                                         
+ ▐   ▐               ▐                                              
+*/
+/* Base ---------------------------------------------------- */
 * {
   margin: 0px;
   padding: 0px;
@@ -7,8 +24,9 @@
 body {
 	background: WhiteSmoke;	
 }
+/* Base ---------------------------------------------------- */
 
-/* Footer */
+/* Footer -------------------------------------------------- */
 footer{
 	position: absolute;
 	bottom: 0;
@@ -49,47 +67,50 @@ footer{
 .footer-menu ul li a:hover{
 	color: #fff;
 }
-/* Footer */
+/* Footer -------------------------------------------------- */
 
-/* Nav Bar */
+/* Nav Bar ------------------------------------------------- */
 .body-text {
-  display: flex;
-  font-family: "Montserrat", sans-serif;
-  align-items: center;
-  justify-content: center;
-  margin-top: 250px;
+	display: flex;
+	font-family: "Montserrat", sans-serif;
+	align-items: center;
+	justify-content: center;
+	margin-top: 250px;
 }
 nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 8vh;
-  background-color: #64829e;
-  font-family: "Montserrat", sans-serif;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: #64829e;
+	font-family: "Montserrat", sans-serif;
 }
 .heading {
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	font-size: 20px;
 }
 .nav-links {
-  display: flex;
-  justify-content: space-around;
-  width: 40%;
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
 }
 .nav-links li {
-  list-style: none;
+	list-style: none;
 }
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-weight: bold;
-  font-size: 14px;
-  padding: 14px 16px;
+	color: white;
+	text-decoration: none;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 14px 16px;
 }
 .nav-links a:hover:not(.active) {
-  background-color: #708CA8;
+	background-color: #708CA8;
 }
-/* Nav Bar */
+.nav-link-active {
+	background-color: #708CA8;
+}
+/* Nav Bar ------------------------------------------------- */
