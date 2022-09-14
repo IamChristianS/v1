@@ -28,6 +28,9 @@ body {
 
 /* Games --------------------------------------------------- */
 .game-img {
+	width: auto;
+	height: auto;
+	
 	padding-left: auto;
 	padding-right: auto;
 	float: center;
