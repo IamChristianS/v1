@@ -27,7 +27,7 @@ body {
 /* Base ---------------------------------------------------- */
 
 /* Games --------------------------------------------------- */
-.game-table {
+.game-table tr td {
 	padding-left: auto;
 	padding-right: auto;
 	align: center;
