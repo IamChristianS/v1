@@ -107,10 +107,10 @@ nav {
 	font-size: 14px;
 	padding: 14px 16px;
 }
-.nav-links a:hover:not(.active) {
+.nav-links a:hover:not(#nav-active-link) {
 	background-color: #708CA8;
 }
-#nav-active-link {
+#nav-active-link a {
 	background-color: #708CA8;
 }
 /* Nav Bar ------------------------------------------------- */
