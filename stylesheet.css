@@ -29,7 +29,7 @@ body {
 /* Games --------------------------------------------------- */
 .game-img {
 	width: auto;
-	height: auto;
+	height: 200px;
 	
 	padding-left: auto;
 	padding-right: auto;
@@ -38,7 +38,7 @@ body {
 
 .game-caption {
 	font-family: "Montserrat", sans-serif;
-	font-size: auto;
+	font-size: 12px;
 }
 /* Games --------------------------------------------------- */
 
