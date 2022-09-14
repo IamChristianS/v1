@@ -110,7 +110,7 @@ nav {
 .nav-links a:hover:not(.active) {
 	background-color: #708CA8;
 }
-.nav-link-active {
+.nav-active-link {
 	background-color: #708CA8;
 }
 /* Nav Bar ------------------------------------------------- */
