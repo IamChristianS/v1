@@ -26,6 +26,19 @@ body {
 }
 /* Base ---------------------------------------------------- */
 
+/* Games --------------------------------------------------- */
+.game-img {
+	padding-left: auto;
+	padding-right: auto;
+	float: center;
+}
+
+.game-caption {
+	font-family: "Montserrat", sans-serif;
+	font-size: auto;
+}
+/* Games --------------------------------------------------- */
+
 /* Footer -------------------------------------------------- */
 footer{
 	position: absolute;
