@@ -44,7 +44,7 @@ Mario.LoseState.prototype.Exit = function() {
 
 Mario.LoseState.prototype.Update = function(delta) {
     this.drawManager.Update(delta);
-    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.S)) {
+    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.W) || Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Up) {
         this.wasKeyDown = true;
     }
 };
@@ -54,7 +54,7 @@ Mario.LoseState.prototype.Draw = function(context) {
 };
 
 Mario.LoseState.prototype.CheckForChange = function(context) {
-    if (this.wasKeyDown && !Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.S)) {
+    if (this.wasKeyDown && !Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.W) || !Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Up)) {
         context.ChangeState(new Mario.TitleState());
     }
 };
