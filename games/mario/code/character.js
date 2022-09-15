@@ -190,7 +190,7 @@ Mario.Character.prototype.Move = function() {
         this.Facing = -1;
     }
     
-    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.S) || (this.JumpTime < 0 && !this.OnGround && !this.Sliding)) {
+    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Up) || (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.W) || (this.JumpTime < 0 && !this.OnGround && !this.Sliding)) {
         if (this.JumpTime < 0) {
             this.Xa = this.XJumpSpeed;
             this.Ya = -this.JumpTime * this.YJumpSpeed;
@@ -222,7 +222,7 @@ Mario.Character.prototype.Move = function() {
         this.JumpTime = 0;
     }
     
-    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Left) && !this.Ducking) {
+    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Left) || (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.A) && !this.Ducking) {
         if (this.Facing === 1) {
             this.Sliding = false;
         }
@@ -232,7 +232,7 @@ Mario.Character.prototype.Move = function() {
         }
     }
     
-    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Right) && !this.Ducking) {
+    if (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.Right) || (Enjine.KeyboardInput.IsKeyDown(Enjine.Keys.D) && !this.Ducking) {
         if (this.Facing === -1) {
             this.Sliding = false;
         }
