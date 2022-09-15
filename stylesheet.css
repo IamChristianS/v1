@@ -28,8 +28,8 @@ body {
 
 /* Games --------------------------------------------------- */
 .game-table tr td {
-	padding-left: auto;
-	padding-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
 	align: center;
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
