@@ -3,16 +3,9 @@
 	<head>
 		<title>Mario</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script>
-			function resizeCanvas() {
-			    var canvs = document.getElementById("canvas");
-			    canvs.width = window.innerWidth;
-			    canvs.height = window.innerHeight;
-			}
-		</script>
 	</head>
-	<body onload="resizeCanvas();">
-		<canvas id="canvas">
+	<body>
+		<canvas id="canvas" width="1280" height="720">
 			<p>Your browser does not support the canvas element.</p>
 		</canvas>
         
