@@ -34,9 +34,7 @@ body {
 	text-align: center;
 	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
-}
-.game-box {
-	background-color: red;
+	background: #e6e6f0;
 }
 /* Games --------------------------------------------------- */
 
