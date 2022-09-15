@@ -35,6 +35,9 @@ body {
 	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
 }
+.game-box {
+	background-color: red;
+}
 /* Games --------------------------------------------------- */
 
 /* Footer -------------------------------------------------- */
