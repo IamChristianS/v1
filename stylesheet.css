@@ -24,6 +24,20 @@
 body {
 	background: #F0F0FA;	
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}
 /* Base ---------------------------------------------------- */
 
 /* Games --------------------------------------------------- */
