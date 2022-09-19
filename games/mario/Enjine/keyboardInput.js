@@ -6,7 +6,9 @@
 Enjine.Keys = {
     A: 37,
     D: 39,
-    S: 38,
+    W: 38,
+    S: 40,
+    Down: 40,
     Left: 37,
     Up: 38,
     Right: 39
