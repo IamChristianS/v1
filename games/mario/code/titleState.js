@@ -31,7 +31,7 @@ Mario.TitleState.prototype.Enter = function() {
     this.logo.X = 0, this.logo.Y = 0;
 
     this.font = Mario.SpriteCuts.CreateRedFont();
-    this.font.Strings[0] = { String: "Press S to Start", X: 96, Y: 120 };
+    this.font.Strings[0] = { String: "Press UP ARROW to Start", X: 96, Y: 120 };
 
     this.logoY = 20;
 
