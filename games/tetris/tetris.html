@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML5 Tetris</title>
+        <meta charset="UTF-8">
+
+        <link href='http://fonts.googleapis.com/css?family=Lemon|Gochi+Hand' rel='stylesheet' type='text/css'>
+
+        <link id="fav" rel="shortcut icon" type="image/png" href="http://www.xarg.org/favicon.ico" />
+        {literal}
+        <style>
+
+            a {
+                color: #000;
+                text-decoration: none;
+                font-family:Arial;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            html{
+                overflow:hidden;
+            }
+
+            body {
+                background: #def;
+            }
+
+            #OfCourseItsMe {
+                font-family:Arial;
+                font-size: 11px;
+                text-decoration:none;
+                color: #78a;
+            }
+
+            #OfCourseItsMe a {
+                font-weight: bold;
+            }
+
+            #canvas {
+                border: 10px solid #78a;
+                background: #becfea;
+                position:absolute;
+                z-index:0;
+                left: 70px;
+            }
+
+            #preview {
+                position: absolute;
+                left: 550px;
+                border: 10px solid #78a;
+                background: #becfea;
+                top: 20px;
+                z-index: 1;
+            }
+
+            #highscore {
+                background: #78a;
+                position:absolute;
+                z-index: 100;
+
+                font-family: 'Gochi Hand', sans-serif;
+                font-size: 30px;
+                color: #fff;
+
+                width:400px;
+                left: 70px;
+                top: 300px;
+                text-align: center;
+                padding: 30px 0px;
+                display:none;
+            }
+
+            #nick {
+                border: 0px none;
+                background: #78a;
+                color:white;
+                font-family: inherit;
+                font-size: 20px;
+            }
+
+            #submit {
+                cursor:pointer;
+                font-family: inherit;
+                display:block;
+            }
+
+            #favicon {
+                display:none;
+            }
+
+            #edit, #best {
+                width: 400px;
+                position:absolute;
+                right: -442px;
+                top: 20px;
+                z-index: 2;
+                font-family: Arial;
+                font-size:14px;
+                border: 10px solid #000;
+                background: #fff;
+            }
+
+            #edit table {
+                border-collapse: collapse;
+                background: #becfea;
+                float:left;
+                margin: 5px;
+            }
+
+            #edit td {
+                width: 10px;
+                height: 10px;
+                background: #000;
+                margin: 2px;
+                border: 1px solid #fff;
+            }
+
+            #open, #open2 {
+                position:absolute;
+                left: -43px;
+                top: 20px;
+                padding:3px 10px;
+                background: #000;
+                color:white;
+                transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+            }
+
+            #best table {
+                margin-top: 20px;
+                margin-left: 50px;
+                margin-bottom: 20px;
+            }
+
+            #open2 {
+                top: 90px;
+                left: -49px;
+            }
+
+            #best td {
+                padding: 5px;
+            }
+
+            h1 {
+                position:absolute;
+                left: -200px;
+                top: 200px;
+                margin:0px;
+                padding:0px;
+                font-size: 60px;
+                font-family: 'Lemon', cursive;
+                color: white;
+                text-shadow: -3px 3px #78a;
+
+                transform: rotate(270deg);
+                -ms-transform: rotate(270deg); /* IE 9 */
+                -webkit-transform: rotate(270deg); /* Safari and Chrome */
+            }
+
+            #stat {
+                font-family: 'Gochi Hand', sans-serif;
+                color: white;
+                text-shadow: 2px 2px #78a;
+                font-weight: bold;
+                font-size: 35px;
+            }
+
+            #xarg > img {
+                position:fixed;
+                right:20px;
+                bottom:20px;
+                z-index:1000;
+                border:0;
+            }
+
+            #restart {
+                position:absolute; 
+                z-index: 100; 
+                left: 170px;
+                top: 330px;
+                font-size: 30px;
+                font-family: 'Gochi Hand', sans-serif;
+                display:none;
+            }
+
+
+            #home {
+                display:none;
+                color: #c33;
+            }
+            
+            #slinks a {
+                color: #c00;
+            }
+
+        </style>
+        {/literal}
+    </head>
+    <body>
+
+        <h1>HTML5 TETRIS</h1>
+
+        <canvas id="canvas"></canvas>
+        <canvas id="preview"></canvas>
+        <canvas id="favicon"></canvas>
+
+        <div id="edit">
+            <div id="open">Edit</div>
+
+            <div><input id="tilesX" type="range" min="5" max="70" value="21" onchange="textBoxEdit(this)"> X <input id="tilesY" type="range" min="5" max="70" value="35" onchange="textBoxEdit(this)"> Tiles</div>
+            <div><input id="tilesSize" type="range" min="5" max="40" value="18" onchange="textBoxEdit(this)"> Tile-Size</div>
+            <div><input id="border" type="range" min="0" max="15" value="2" onchange="textBoxEdit(this)"> Border</div>
+            <div><input id="speedDelay" step="10" type="range" min="40" max="1000" value="200" onchange="textBoxEdit(this)"> Speed Delay</div>
+
+            <div><input type="checkbox" value="1" id="Cpause" onchange="textBoxEdit(this)"> Pause (p)</div>
+            <div><input type="checkbox" value="1" id="Cauto" onchange="textBoxEdit(this)"> Autopilot (a)</div>
+            <div><input type="checkbox" value="1" id="Cshadow" onchange="textBoxEdit(this)" checked="checked"> Shadow (s)</div>
+            <div><input type="checkbox" value="1" id="Cpreview" onchange="textBoxEdit(this)" checked="checked"> Preview (w)</div>
+            <div><input type="checkbox" value="1" id="Cfavicon" onchange="textBoxEdit(this)" checked="checked"> Favicon (f)</div>
+            <div><input type="checkbox" value="1" id="Cgamepad" onchange="textBoxEdit(this)"> Gamepad</div>
+
+            <div>Active shadow and preview reduces the score per tile!</div>
+
+            <div id="tables">
+
+            </div>
+
+            <div id="slinks">
+                Share Custom Tetris<br>
+                <a id="sFB" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">FB</a> -
+                <a id="sTW" href="http://twitter.com/share?text=HTML5%20Tetris%20made%20by%20%40roberteisele&amp;url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">TW</a> - 
+                <a id="sGP" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.xarg.org%2Fproject%2Ftetris%2F">G+</a>
+            </div>
+
+        </div>
+
+        <div id="best">
+            <div id="open2">Score</div>
+
+            <table>
+
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Lines</th>
+                </tr>
+                {local:$i}
+                {php}$i=0;{/php}
+                {fores $score as $s}
+                <tr>
+                    <td>#{!++$i}</td>
+                    <td>{$s.TName}</td>
+                    <td>{!$s.TScore}</td>
+                    <td>{!$s.TLine}</td>
+                </tr>
+                {/fores}
+            </table>
+
+        </div>
+
+        <div id="highscore">
+
+            <div>Enter your name</div>
+
+            <input type="text" id="nick" placeholder="Your name">
+
+            <span id="submit">go</span>
+
+        </div>
+
+        <div id="restart">
+            Click to restart
+        </div>
+
+        <div style="position:absolute;left: 560px;top: 250px;">
+
+            <div style="height: 100px;">
+                <a id="home" href="http://www.xarg.org/project/tetris/">Highscore participation</a>
+            </div>
+            <div id="stat">
+                Score: <span id="score">0</span><br>
+                Lines: <span id="lines">0</span><br>
+            </div>
+
+
+            <span id="OfCourseItsMe">by <a href="http://www.xarg.org/">Robert Eisele</a> (<a href="https://twitter.com/RobertEisele">Twitter</a>)<br>Source &amp; Description (<a href="https://github.com/infusion/HTML5-Tetris">Github</a>)</span>
+
+        </div>
+
+
+        <script src="/download/tetris.js"></script>
+
+        <a id="xarg" href="http://www.xarg.org/projects/"><img width="59" height="61" src="http://www.xarg.org/image/xarg-logo.png" alt="xarg open projects" /></a>
+
+    </body>
+</html>
