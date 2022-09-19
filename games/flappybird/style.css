@@ -22,8 +22,8 @@ body {
 }
     canvas {
         display: block;
-        width: 600px;
-        height: 800px;
+        width: 300px;
+        height: 500px;
         margin: 0 auto;
     }
     .game-description {
