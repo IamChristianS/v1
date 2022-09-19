@@ -85,6 +85,11 @@ footer{
 /* Footer -------------------------------------------------- */
 
 /* Nav Bar ------------------------------------------------- */
+#header-title {
+	text-decoration: none;
+	color: Black;
+}
+
 .body-text {
 	display: flex;
 	font-family: "Montserrat", sans-serif;
