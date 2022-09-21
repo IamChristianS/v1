@@ -82,6 +82,14 @@ footer{
 .footer-menu ul li a:hover{
 	color: #fff;
 }
+@media (max-width:500px) {
+	.footer-menu ul{
+	  display: inline;
+	}
+	.footer-menu ul li{
+	  margin-bottom: 20px;
+	}
+}
 /* Footer -------------------------------------------------- */
 
 /* Nav Bar ------------------------------------------------- */
