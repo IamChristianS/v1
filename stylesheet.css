@@ -43,14 +43,14 @@ body {
 
 /* Footer -------------------------------------------------- */
 footer{
-	position: sticky;
+	position: absolute;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	background: #64829e;
 	height: auto;
 	width: 100vw;
-	padding-top: 40px;
+	padding-top: 100px;
 	color: #fff;
 }
 .footer-content{
