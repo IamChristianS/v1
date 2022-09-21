@@ -50,8 +50,9 @@ footer{
 	background: #64829e;
 	height: auto;
 	width: 100vw;
-	padding-top: 100px;
+	padding-top: 30px;
 	color: #fff;
+	margin: 10px;
 }
 .footer-content{
 	display: flex;
