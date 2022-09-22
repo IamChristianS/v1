@@ -4,13 +4,9 @@
 */
 
 Enjine.Keys = {
-    A: 37,
-    D: 39,
-    W: 38,
-    S: 40,
-    Down: 40,
+    Down: 38,
     Left: 37,
-    Up: 38,
+    Up: 40,
     Right: 39
 };
 
