@@ -33,13 +33,19 @@ body {
 	padding-right: 10px;
 	align: center;
 	text-align: center;
-	font-family: "Montserrat", sans-serif;
 	font-size: 2em;
 }
 .game-table {
 	background-color: #e6e6f0;
 }
 /* Games --------------------------------------------------- */
+
+/* Settings ------------------------------------------------ */
+favicon-btn {
+	background-color: blue;
+	radius: 10px;
+}
+/* Settings ------------------------------------------------ */
 
 /* Footer -------------------------------------------------- */
 footer{
@@ -58,7 +64,6 @@ footer{
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
-	font-family: "Montserrat", sans-serif;
 }
 .footer-menu{
 	margin-bottom: 20px;
@@ -76,7 +81,6 @@ footer{
 	padding: 6px 15px;
 	border-radius: 50px;
 	text-decoration: none;
-	font-family: "Montserrat", sans-serif;
 }
 .footer-menu ul li a:hover{
 	color: #fff;
@@ -99,7 +103,6 @@ footer{
 
 .body-text {
 	display: flex;
-	font-family: "Montserrat", sans-serif;
 	align-items: center;
 	justify-content: center;
 	margin-top: 250px;
@@ -110,7 +113,6 @@ nav {
 	align-items: center;
 	min-height: 8vh;
 	background-color: #64829e;
-	font-family: "Montserrat", sans-serif;
 }
 .heading {
 	color: white;
@@ -141,4 +143,3 @@ nav {
 	background-color: #708CA8;
 }
 /* Nav Bar ------------------------------------------------- */
-
