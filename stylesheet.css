@@ -44,7 +44,7 @@ body {
 .favicon-btn {
 	background-color: blue;
 	border: none;
-	border-radius: 10px;
+	radius: 10px;
 }
 /* Settings ------------------------------------------------ */
 
