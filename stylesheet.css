@@ -41,9 +41,10 @@ body {
 /* Games --------------------------------------------------- */
 
 /* Settings ------------------------------------------------ */
-.favicon {
-	background-color: blue;
-	radius: 10px;
+.favicon-btn {
+	background-color: gray;
+	border: 2px solid black;
+	border-radius: 10px;
 }
 /* Settings ------------------------------------------------ */
 
