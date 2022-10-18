@@ -38,6 +38,9 @@ body {
 .game-table {
 	background-color: #e6e6f0;
 }
+#incomplete {
+	display: none;	
+}
 /* Games --------------------------------------------------- */
 
 /* Settings ------------------------------------------------ */
