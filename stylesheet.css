@@ -65,12 +65,10 @@ footer{
 	text-align: center;
 }
 .footer-links {
-	align: center;
 	padding-top: 15px;	
 }
 .footer-links li{
 	padding-right: 10px;
-	display: block;
 }
 .footer-links li a{
 	color: #cfd2d6;
