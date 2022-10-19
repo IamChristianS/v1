@@ -20,10 +20,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
 body {
 	background: #F0F0FA;
 	font-family: "Montserrat", sans-serif;
+}
+#incomplete {
+	display: none;	
 }
 /* Base ---------------------------------------------------- */
 
@@ -37,9 +39,6 @@ body {
 }
 .game-table {
 	background-color: #e6e6f0;
-}
-#incomplete {
-	display: none;	
 }
 /* Games --------------------------------------------------- */
 
@@ -65,12 +64,14 @@ footer{
 	color: #ffffff;
 	text-align: center;
 }
+.footer-links {
+	align: center;
+	padding-top: 10px;	
+}
 .footer-links li{
 	padding-right: 10px;
 	display: block;
 	float: left;
-	align: center;
-	padding-top: 10px;
 }
 .footer-links li a{
 	color: #cfd2d6;
