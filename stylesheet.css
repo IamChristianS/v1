@@ -70,6 +70,7 @@ footer{
 	display: block;
 	float: left;
 	align: center;
+	padding-top: 10px;
 }
 .footer-links li a{
 	color: #cfd2d6;
