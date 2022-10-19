@@ -66,6 +66,7 @@ footer{
 }
 .footer-links {
 	padding-top: 10px;
+	margin-bottom: 2px;
 }
 .footer-links a{
 	color: #cfd2d6;
