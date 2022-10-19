@@ -69,6 +69,7 @@ footer{
 	padding-right: 10px;
 	display: block;
 	float: left;
+	align: center;
 }
 .footer-links li a{
 	color: #cfd2d6;
