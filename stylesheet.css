@@ -62,32 +62,29 @@ footer{
 	width: 100vw;
 	padding-top: 40px;
 	color: #fff;
-}
-.footer-content{
+	margin-bottom: 20px;
+	margin-top: 20px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 	text-align: center;
 }
-.footer-menu{
-	margin-bottom: 20px;
-}
-.footer-menu ul{
+.footer-links{
 	display: flex;
 }
-.footer-menu ul li{
+.footer-links li{
 	padding-right: 10px;
 	display: block;
 }
-.footer-menu ul li a{
+.footer-links li a{
 	color: #cfd2d6;
 	border: 1.3px solid white;
 	padding: 6px 15px;
 	border-radius: 50px;
 	text-decoration: none;
 }
-.footer-menu ul li a:hover{
+.footer-links li a:hover{
 	color: #fff;
 }
 @media (max-width:500px) {
