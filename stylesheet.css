@@ -70,10 +70,9 @@ footer{
 .footer-links a{
 	color: #cfd2d6;
 	border: 1.3px solid white;
-	padding: 6px 15px;
+	padding: 15px 15px;
 	border-radius: 50px;
 	text-decoration: none;
-	padding-right: 10px;
 }
 .footer-links a:hover{
 	color: #ffffff;
