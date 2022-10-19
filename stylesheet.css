@@ -97,7 +97,7 @@ footer{
 	justify-content: center;
 	margin-top: 250px;
 }
-nav {
+.nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
