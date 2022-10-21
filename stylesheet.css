@@ -27,6 +27,17 @@ body {
 #incomplete {
 	display: none;	
 }
+#incompatible {
+	display: none;
+}
+@media only screen and (max-width: 1024px) {
+	body {
+		display: none;
+	}
+	#incompatible {
+		display: initial;
+	}
+}
 /* Base ---------------------------------------------------- */
 
 /* Games --------------------------------------------------- */
