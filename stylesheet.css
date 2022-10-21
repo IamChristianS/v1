@@ -117,7 +117,7 @@ footer{
 .nav-links {
 	display: flex;
 	justify-content: space-around;
-	width: 50%;
+	width: 60%;
 }
 .nav-links li {
 	list-style: none;
