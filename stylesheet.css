@@ -31,7 +31,7 @@ body {
 	display: none;
 }
 @media only screen and (max-width: 1024px) {
-	body {
+	body:not(#incompatible) {
 		display: none;
 	}
 	#incompatible {
