@@ -117,7 +117,7 @@ footer{
 .nav-links {
 	display: flex;
 	justify-content: space-around;
-	width: 60%;
+	width: 50%;
 }
 .nav-links li {
 	list-style: none;
@@ -129,6 +129,7 @@ footer{
 	font-weight: bold;
 	font-size: 14px;
 	padding: 14px 16px;
+	width: 110%;
 }
 .nav-links a:hover:not(#nav-active-link) {
 	background-color: #708CA8;
