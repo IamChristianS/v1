@@ -24,12 +24,10 @@ body {
 	background: #F0F0FA;
 	font-family: "Montserrat", sans-serif;
 }
-#incomplete {
+#incomplete, #incompatible {
 	display: none;	
 }
-#incompatible {
-	display: none;
-}
+
 @media only screen and (max-width: 1024px) {
 	body:not(#incompatible) {
 		display: none;
@@ -119,7 +117,7 @@ footer{
 .nav-links {
 	display: flex;
 	justify-content: space-around;
-	width: 40%;
+	width: 50%;
 }
 .nav-links li {
 	list-style: none;
