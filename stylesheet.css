@@ -73,13 +73,15 @@ footer{
 	color: #ffffff;
 	text-align: center;
 }
+.footer-links {
+	padding-top: 10px;
+}
 .footer-links a{
 	color: #cfd2d6;
 	border: 1.3px solid white;
 	padding: 6px 15px;
 	border-radius: 50px;
 	text-decoration: none;
-	margin-top: 10px;
 }
 .footer-links a:hover{
 	color: #ffffff;
