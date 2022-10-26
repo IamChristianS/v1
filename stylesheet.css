@@ -24,6 +24,10 @@ body {
 	background: #F0F0FA;
 	font-family: "Montserrat", sans-serif;
 }
+a {
+	color: #3c5a76;
+}
+
 #incomplete, #incompatible {
 	display: none;	
 }
