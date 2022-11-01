@@ -19,9 +19,9 @@ span {
     position: absolute;
     right: 0px;
     display: none;
-    font-size: 40pt;
+    font-size: 30pt;
     font-weight: bold;
-    text-align: right;
+    text-align: center;
     vertical-align: bottom;
     font-family: monospace;
     display: none;
