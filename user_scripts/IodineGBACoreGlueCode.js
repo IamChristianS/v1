@@ -4,9 +4,6 @@ var games = {
     "monopoly":"Monopoly",
     "pokemon_emerald":"Pokemon Emerald",
     "pokemon_fire_red":"Pokemon Fire Red",
-    "sonic_advance":"Sonic Advance",
-    "sonic_advance2":"Sonic Advance 2",
-    "sonic_advance3":"Sonic Advance 3",
     "sonic_pinball":"Sonic Pinball",
     "street_fighter_2":"Super Street Fighter II: Turbo Revival",
     "spyro_adventure":"Spyro Adventure",
@@ -45,7 +42,7 @@ function registerBIOS() {
 }
 function downloadROM(gamename) {
     Iodine.pause();
-    showTempString("A = X | B = Z | ENTER = START | SHIFT = SELECT | A/S = L/R Bumper");
+    showTempString("Game Loading\n| X = A | Z = B | ENTER = START | SHIFT = SELECT | A/S = L/R Bumper |");
 }
 function registerROM() {
     clearTempString();
