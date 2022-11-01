@@ -2,12 +2,12 @@
 
 var games = {
     "monopoly":"Monopoly",
-    "pokemonemerald":"Pokemon Emerald",
-    "pokemonred":"Pokemon Fire Red",
+    "pokemon_emerald":"Pokemon Emerald",
+    "pokemon_fire_red":"Pokemon Fire Red",
     "sonic_advance":"Sonic Advance",
     "sonic_advance2":"Sonic Advance 2",
     "sonic_advance3":"Sonic Advance 3",
-    "sonicpinball":"Sonic Pinball",
+    "sonic_pinball":"Sonic Pinball",
     "street_fighter_2":"Super Street Fighter II: Turbo Revival",
     "spyro_adventure":"Spyro Adventure",
 };
