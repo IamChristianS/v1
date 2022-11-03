@@ -43,6 +43,7 @@ function registerBIOS() {
 function downloadROM(gamename) {
     Iodine.pause();
     showTempString("Game Loading\n| X = A | Z = B | ENTER = START | SHIFT = SELECT | A/S = L/R Bumper |");
+    downloadFile("Binaries/" + gamename + ".gba", registerROM);
 }
 function registerROM() {
     clearTempString();
