@@ -6,7 +6,7 @@ var games = {
     "pokemon_fire_red":"Pokemon Fire Red",
     "sonic_pinball":"Sonic Pinball",
     "street_fighter_2":"Super Street Fighter II: Turbo Revival",
-    "spyro_adventure":"Spyro Adventure",
+    "spyro_adventure":"Spyro Adventure"
 };
 var Iodine = null;
 var Blitter = null;
