@@ -2,10 +2,10 @@
 
 var games = {
     "monopoly":"Monopoly",
-    "pokemon_emerald":"Pokemon Emerald",
-    "pokemon_fire_red":"Pokemon Fire Red",
-    "sonic_pinball":"Sonic Pinball",
-    "street_fighter_2":"Super Street Fighter II: Turbo Revival",
+    "pokemonemerald":"Pokemon Emerald",
+    "pokemonred":"Pokemon Fire Red",
+    "sonicpinball":"Sonic Pinball",
+    "street_fighter_2_turbo_revival":"Super Street Fighter II: Turbo Revival",
     "spyro_adventure":"Spyro Adventure"
 };
 var Iodine = null;
