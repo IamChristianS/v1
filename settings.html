@@ -40,13 +40,13 @@
             .table thead th {
                 padding: .5vw 1vw;
             }
-			.table tbody tr td a {
-				text-decoration: none;
+	    .table tbody tr td a {
+		text-decoration: none;
                 padding: 1vw;
-			}
+	    }
             .table tbody tr td a:hover {
-				color: #0a0082;
-			}
+		color: #0a0082;
+	    }
 
             /* Tab Name Changer w/ Mobile Fix */
             @media screen and (max-width: 1280px) {
@@ -124,186 +124,188 @@
 	</head>
 	<body>
 		<!--Navbar-->
-        <nav class="nav">
-			<div class="header">
-				<h4><a href="index.html" class="header-text">Project-Hub</a></h4>
-			</div>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="games.html">Games</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li id="nav-links-active"><a href="settings.html">Settings</a></li>
-				<li><a href="https://www.github.com/santangeloChristian/Project-Hub" target="_blank">GitHub</a></li>
-			</ul>
-		</nav>
-        <!--Header Image-->
-        <img src="img/header.png" alt="Image couldn't load." class="img-header">
-        
-		<!--Content-->
-        <div class="desc-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-            <h2 style="font-weight:bold;">Favicon Changer</h2>
-            <center>
-                <button class="icon-btn"><img src="icons/canvas.ico" id="favicon-button-1" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google-classroom.ico" id="favicon-button-2" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google-drive.ico" id="favicon-button-3" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google-slides.ico" id="favicon-button-4" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google-docs.ico" id="favicon-button-5" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google-mail.ico" id="favicon-button-6" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/google.ico" id="favicon-button-7" onclick="updateFavicon(this.id)"></button>
-                <button class="icon-btn"><img src="icons/turnitin.ico" id="favicon-button-8" onclick="updateFavicon(this.id)"></button><br>
-                <button class="reset-btn" onclick="updateFavicon(this.querySelector('img').id)"><img src="icons/default.ico" id="favicon-button-9">Reset</button>
-                <!--Tab Name Changer-->
-                <h2 style="font-weight:bold;padding-top: 2vw;">Tab Name Changer</h2>
-                <form action="set-title.php" method="get">
-                    <input class="input-box" type="text" id="newTitle" placeholder="Blank for Default"><br>
-                    <button class="reset-btn-text" onclick="changeTitle()">Submit</button>
-                </form>
-            </center>
-        </div>
-        <center style="padding: 2vw 0;">
-        <table class="w3-center w3-border table" style="background-color: snow; margin-bottom: 4vw; margin-top: 1vw;">
-            <thead>
-                <th>Game Name</th>
-                <th>Source</th>
-                <th>Game Name</th>
-                <th>Source</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><a href="https://github.com/ozh/cookieclicker">Cookie Clicker</a></td>
-                    <td><a href="https://github.com/ozh/cookieclicker">ozh (GitHub)</a></td>
-                    <td><a href="https://github.com/ObjectifLibre/2048">2048</a></td>
-                    <td><a href="https://github.com/ObjectifLibre/2048">ObjectifLibre (GitHub)</a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://github.com/robertkleffner/mariohtml5">Mario</a></td>
-                    <td><a href="https://github.com/robertkleffner/mariohtml5">robertkleffner (GitHub)</a></td>
-                    <td><a href="https://github.com/noanonoa/flappy-bird">Flappy Bird</a></td>
-                    <td><a href="https://github.com/noanonoa/flappy-bird">noanonoa (GitHub)</a></td>
-                </tr>
-                <tr>
-                    <td>World's Hardest Game</td>
-                    <td>Stephen Critoph</td>
-                    <td>The Impossible Quiz</td>
-                    <td>Splapp-Me-Do</td>
-                </tr>
-                <tr>
-                    <td>Breaking The Bank</td>
-                    <td>PuffballsUnited</td>
-                    <td>Escaping The Prison</td>
-                    <td>PuffballsUnited</td>
-                </tr>
-                <tr>
-                    <td>Stealing The Diamond</td>
-                    <td>PuffballsUnited</td>
-                    <td>Infiltrating The Airship</td>
-                    <td>PuffballsUnited</td>
-                </tr>
-                <tr>
-                    <td>Fleeing The Complex</td>
-                    <td>PuffballsUnited</td>
-                    <td><a href="https://github.com/cgolden15/Slope-Game">Slope</a></td>
-                    <td><a href="https://github.com/cgolden15/Slope-Game">cgolden15 (GitHub)</a></td>
-                </tr>
-                <tr>
-                    <td>Riddle School 1</td>
-                    <td>Jonochrome</td>
-                    <td>Riddle School 2</td>
-                    <td>Jonochrome</td>
-                </tr>
-                <tr>
-                    <td>Riddle School 3</td>
-                    <td>Jonochrome</td>
-                    <td>Riddle School 4</td>
-                    <td>Jonochrome</td>
-                </tr>
-                <tr>
-                    <td>Riddle School 5</td>
-                    <td>Jonochrome</td>
-                    <td>Riddle Transfer 1</td>
-                    <td>Jonochrome</td>
-                </tr>
-                <tr>
-                    <td>Riddle Transfer 2</td>
-                    <td>Jonochrome</td>
-                    <td><a href="https://github.com/jeroenverfallie/ggo13-transcube">Transcube</a></td>
-                    <td><a href="https://github.com/jeroenverfallie/ggo13-transcube">jeroenverfallie (GitHub)</a></td>
-                </tr>
-                <tr>
-                    <td><a href="https://classic.minecraft.net/">Minecraft: Classic</a></td>
-                    <td><a href="https://classic.minecraft.net/">Mojang Studios (Minecraft.Net)</a></td>
-                    <td>MotoX3M</td>
-                    <td>MadPuffers</td>
-                </tr>
-                <tr>
-                    <td>MotoX3M 2</td>
-                    <td>MadPuffers</td>
-                    <td>Pokemon: Fire Red</td>
-                    <td>GameFreak & Nintendo</td>
-                </tr>
-                <tr>
-                    <td>Pokemon: Emerald</td>
-                    <td>GameFreak & Nintendo</td>
-                    <td>Monopoly</td>
-                    <td>HasBro & Atari</td>
-                </tr>
-                <tr>
-                    <td>Spyro Adventure</td>
-                    <td>Digital Eclipse</td>
-                    <td>Street Fighter 2</td>
-                    <td>Capcom</td>
-                </tr>
-            </tbody>
-        </table>
-		<h3 style="font-weight:bold;">Copying Rights:</h3>
-		<p>This site is open-source and the code is right there to look at and/or copy at.</p>
-		<p>You are 100% allowed to copy and paste my site however you want, BUT there has to be a mention and link to the original site.</p>
-        </center>
-        
-		<!--Footer-->
-        <footer class="footer">
-            <p class="w3-center w3-text-white">Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
-            <p class="w3-center w3-text-white">Disclaimer: This site should not be used during school/work, and I am not responsible for the users on this site.</p>
-            <p class="footer-link"><a href="https://github.com/santangeloChristian" class="w3-text-white w3-border w3-round-xxlarge">GitHub Page</a><p>
-        </footer>
-        <!--Disable Context-Menu-->
-        <script>
-            document.addEventListener('contextmenu', event => event.preventDefault());
-        </script>
-        <!--Save Favicon & Title-->
-        <script>
-            function changeTitle() {
-                var newTitle = document.getElementById("newTitle").value;
-                if (newTitle === "") {
-                    localStorage.removeItem("title");
-                } else {
-                    localStorage.setItem("title", newTitle);
-                    document.title = newTitle;
-                }
+		<nav class="nav">
+				<div class="header">
+					<h4><a href="index.html" class="header-text">Project-Hub</a></h4>
+				</div>
+				<ul class="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="games.html">Games</a></li>
+					<li><a href="contact.html">Contact</a></li>
+					<li id="nav-links-active"><a href="settings.html">Settings</a></li>
+					<li><a href="https://www.github.com/santangeloChristian/Project-Hub" target="_blank">GitHub</a></li>
+				</ul>
+			</nav>
+		<!--Header Image-->
+		<img src="img/header.png" alt="Image couldn't load." class="img-header">
 
-                window.location.reload();
-            }
+			<!--Content-->
+		<div class="desc-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+		    <h2 style="font-weight:bold;">Favicon Changer</h2>
+		    <center>
+			<button class="icon-btn"><img src="icons/canvas.ico" id="favicon-button-1" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google-classroom.ico" id="favicon-button-2" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google-drive.ico" id="favicon-button-3" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google-slides.ico" id="favicon-button-4" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google-docs.ico" id="favicon-button-5" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google-mail.ico" id="favicon-button-6" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/google.ico" id="favicon-button-7" onclick="updateFavicon(this.id)"></button>
+			<button class="icon-btn"><img src="icons/turnitin.ico" id="favicon-button-8" onclick="updateFavicon(this.id)"></button><br>
+			<button class="reset-btn" onclick="updateFavicon(this.querySelector('img').id)"><img src="icons/default.ico" id="favicon-button-9">Reset</button>
+			<!--Tab Name Changer-->
+			<h2 style="font-weight:bold;padding-top: 2vw;">Tab Name Changer</h2>
+			<form action="set-title.php" method="get">
+			    <input class="input-box" type="text" id="newTitle" placeholder="Blank for Default"><br>
+			    <button class="reset-btn-text" onclick="changeTitle()">Submit</button>
+			</form>
+		    </center>
+		</div>
+		<center style="padding: 2vw 0;">
+		<table class="w3-center w3-border table" style="background-color: snow; margin-bottom: 4vw; margin-top: 1vw;">
+		    <thead>
+			<th>Game Name</th>
+			<th>Source</th>
+			<th>Game Name</th>
+			<th>Source</th>
+		    </thead>
+		    <tbody>
+			<tr>
+			    <td><a href="https://github.com/ozh/cookieclicker">Cookie Clicker</a></td>
+			    <td><a href="https://github.com/ozh/cookieclicker">ozh (GitHub)</a></td>
+			    <td><a href="https://github.com/ObjectifLibre/2048">2048</a></td>
+			    <td><a href="https://github.com/ObjectifLibre/2048">ObjectifLibre (GitHub)</a></td>
+			</tr>
+			<tr>
+			    <td><a href="https://github.com/robertkleffner/mariohtml5">Mario</a></td>
+			    <td><a href="https://github.com/robertkleffner/mariohtml5">robertkleffner (GitHub)</a></td>
+			    <td><a href="https://github.com/noanonoa/flappy-bird">Flappy Bird</a></td>
+			    <td><a href="https://github.com/noanonoa/flappy-bird">noanonoa (GitHub)</a></td>
+			</tr>
+			<tr>
+			    <td>World's Hardest Game</td>
+			    <td>Stephen Critoph</td>
+			    <td>The Impossible Quiz</td>
+			    <td>Splapp-Me-Do</td>
+			</tr>
+			<tr>
+			    <td>Breaking The Bank</td>
+			    <td>PuffballsUnited</td>
+			    <td>Escaping The Prison</td>
+			    <td>PuffballsUnited</td>
+			</tr>
+			<tr>
+			    <td>Stealing The Diamond</td>
+			    <td>PuffballsUnited</td>
+			    <td>Infiltrating The Airship</td>
+			    <td>PuffballsUnited</td>
+			</tr>
+			<tr>
+			    <td>Fleeing The Complex</td>
+			    <td>PuffballsUnited</td>
+			    <td><a href="https://github.com/cgolden15/Slope-Game">Slope</a></td>
+			    <td><a href="https://github.com/cgolden15/Slope-Game">cgolden15 (GitHub)</a></td>
+			</tr>
+			<tr>
+			    <td>Riddle School 1</td>
+			    <td>Jonochrome</td>
+			    <td>Riddle School 2</td>
+			    <td>Jonochrome</td>
+			</tr>
+			<tr>
+			    <td>Riddle School 3</td>
+			    <td>Jonochrome</td>
+			    <td>Riddle School 4</td>
+			    <td>Jonochrome</td>
+			</tr>
+			<tr>
+			    <td>Riddle School 5</td>
+			    <td>Jonochrome</td>
+			    <td>Riddle Transfer 1</td>
+			    <td>Jonochrome</td>
+			</tr>
+			<tr>
+			    <td>Riddle Transfer 2</td>
+			    <td>Jonochrome</td>
+			    <td><a href="https://github.com/jeroenverfallie/ggo13-transcube">Transcube</a></td>
+			    <td><a href="https://github.com/jeroenverfallie/ggo13-transcube">jeroenverfallie (GitHub)</a></td>
+			</tr>
+			<tr>
+			    <td><a href="https://classic.minecraft.net/">Minecraft: Classic</a></td>
+			    <td><a href="https://classic.minecraft.net/">Mojang Studios (Minecraft.Net)</a></td>
+			    <td>MotoX3M</td>
+			    <td>MadPuffers</td>
+			</tr>
+			<tr>
+			    <td>MotoX3M 2</td>
+			    <td>MadPuffers</td>
+			    <td>Pokemon: Fire Red</td>
+			    <td>GameFreak & Nintendo</td>
+			</tr>
+			<tr>
+			    <td>Pokemon: Emerald</td>
+			    <td>GameFreak & Nintendo</td>
+			    <td>Monopoly</td>
+			    <td>HasBro & Atari</td>
+			</tr>
+			<tr>
+			    <td>Spyro Adventure</td>
+			    <td>Digital Eclipse</td>
+			    <td>Street Fighter 2</td>
+			    <td>Capcom</td>
+			</tr>
+		    </tbody>
+		</table>
+			<h3 style="font-weight:bold;">Copying Rights:</h3>
+			<p>GNU General Public License v3.0</p>
+			<p>As a short summary, you can take any part of this website. However, you must:</p>
+			<p>Credit this site; State all significant changes; Use the same license.</p>
+			<p>Please head to the GitHub page for more info.</p>
+		</center>
 
-            function updateFavicon(id) {
-                var faviconUrl = document.getElementById(id).src;
-                localStorage.setItem("faviconUrl", faviconUrl);
+			<!--Footer-->
+		<footer class="footer">
+		    <p class="w3-center w3-text-white">Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
+		    <p class="w3-center w3-text-white">Disclaimer: This site should not be used during school/work, and I am not responsible for the users on this site.</p>
+		    <p class="footer-link"><a href="https://github.com/santangeloChristian" class="w3-text-white w3-border w3-round-xxlarge">GitHub Page</a><p>
+		</footer>
+		<!--Disable Context-Menu-->
+		<script>
+		    document.addEventListener('contextmenu', event => event.preventDefault());
+		</script>
+		<!--Save Favicon & Title-->
+		<script>
+		    function changeTitle() {
+			var newTitle = document.getElementById("newTitle").value;
+			if (newTitle === "") {
+			    localStorage.removeItem("title");
+			} else {
+			    localStorage.setItem("title", newTitle);
+			    document.title = newTitle;
+			}
 
-                window.location.reload();
-            }
-        </script>
-        <!--Update Favicon & Title-->
-        <script>
-            window.onload = function() {
-                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-                link.type = 'image/x-icon';
-                link.rel = 'shortcut icon';
-                link.href = localStorage.getItem("faviconUrl");
-                document.getElementsByTagName('head')[0].appendChild(link);
-                var storedTitle = localStorage.getItem("title");
-                if (storedTitle) {
-                    document.title = storedTitle;
-                }
-            }
-        </script>
+			window.location.reload();
+		    }
+
+		    function updateFavicon(id) {
+			var faviconUrl = document.getElementById(id).src;
+			localStorage.setItem("faviconUrl", faviconUrl);
+
+			window.location.reload();
+		    }
+		</script>
+		<!--Update Favicon & Title-->
+		<script>
+		    window.onload = function() {
+			var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+			link.type = 'image/x-icon';
+			link.rel = 'shortcut icon';
+			link.href = localStorage.getItem("faviconUrl");
+			document.getElementsByTagName('head')[0].appendChild(link);
+			var storedTitle = localStorage.getItem("title");
+			if (storedTitle) {
+			    document.title = storedTitle;
+			}
+		    }
+		</script>
 	</body>
 </html>
