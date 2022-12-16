@@ -1,0 +1,80 @@
+<!--
+ ▄▀▀▄▀▀▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄         ▄█  ▄▀▀█▄▄▄▄  ▄▀▄▄▄▄   ▄▀▀▀█▀▀▄ 
+█   █   █ █   █   █ █      █  ▄▀▀▀█▀ ▐ ▐  ▄▀   ▐ █ █    ▌ █    █  ▐ 
+▐  █▀▀▀▀  ▐  █▀▀█▀  █      █ █    █      █▄▄▄▄▄  ▐ █      ▐   █     
+   █       ▄▀    █  ▀▄    ▄▀ ▐    █      █    ▌    █         █      
+ ▄▀       █     █     ▀▀▀▀     ▄   ▀▄   ▄▀▄▄▄▄    ▄▀▄▄▄▄▀  ▄▀       
+█         ▐     ▐               ▀▀▀▀    █    ▐   █     ▐  █         
+▐                                       ▐        ▐        ▐         
+ ▄▀▀▄ ▄▄   ▄▀▀▄ ▄▀▀▄  ▄▀▀█▄▄                                        
+█  █   ▄▀ █   █    █ ▐ ▄▀   █                                       
+▐  █▄▄▄█  ▐  █    █    █▄▄▄▀                                        
+   █   █    █    █     █   █                                        
+  ▄▀  ▄▀     ▀▄▄▄▄▀   ▄▀▄▄▄▀                                        
+ █   █               █    ▐                                         
+ ▐   ▐               ▐                                              
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Display-->
+        <title>Project-Hub | Contact</title>
+        <link rel="icon" href="favicon.ico">
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="nav">
+			<div class="header">
+				<h4><a href="index.html" class="header-text">Project-Hub</a></h4>
+			</div>
+			<ul class="nav-links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="games.html">Games</a></li>
+				<li id="nav-links-active"><a href="contact.html">Contact</a></li>
+				<li><a href="settings.html">Settings</a></li>
+				<li><a href="https://www.github.com/santangeloChristian/Project-Hub" target="_blank">GitHub</a></li>
+			</ul>
+		</nav>
+        <!--Header Image-->
+        <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+
+        <!--Content-->
+        <center style="margin-bottom:2vw;margin-top:2vw;">
+			<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebf0X_0bCTnUMxfTsbX5lUtl00Aspj_ktVKO3C5qN-tjqBsQ/viewform?embedded=true" width="1280" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		</center>
+
+        <!--Footer-->
+        <footer class="footer">
+            <p class="w3-center w3-text-white">Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
+            <p class="w3-center w3-text-white">Disclaimer: This site should not be used during school/work, and I am not responsible for the users on this site.</p>
+            <p class="footer-link"><a href="https://github.com/santangeloChristian" class="w3-text-white w3-border w3-round-xxlarge">GitHub Page</a><p>
+        </footer>
+        <!--Disable Context-Menu-->
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+        <!--Update Favicon & Title-->
+        <script>
+            window.onload = function() {
+                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+                link.type = 'image/x-icon';
+                link.rel = 'shortcut icon';
+                link.href = localStorage.getItem("faviconUrl");
+                document.getElementsByTagName('head')[0].appendChild(link);
+                var storedTitle = localStorage.getItem("title");
+                if (storedTitle) {
+                    document.title = storedTitle;
+                }
+            }
+        </script>
+    </body>
+</html>

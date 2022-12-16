@@ -14,95 +14,45 @@
  █   █               █    ▐                                         
  ▐   ▐               ▐                                              
 */
-/* Base ---------------------------------------------------- */
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
+/* General */
 body {
-	background: #F0F0FA;
-	font-family: "Montserrat", sans-serif;
+    margin: 0;
+    font-family: 'Montserrat', Courier, monospace;
 }
-a {
-	color: #3c5a76;
-}
-
 #incomplete, #incompatible {
 	display: none;	
 }
-
-@media only screen and (max-width: 1024px) {
-	body:not(#incompatible) {
-		display: none;
-	}
-	#incompatible {
-		display: initial;
-	}
+/* Widebox */
+/* Description Box w/ Mobile Fix */
+@media only screen and (max-width: 850px) {
+    .desc-box h2 {
+        font-size: 22px;
+    }
+    .desc-box p {
+        font-size: 18px;
+    }
 }
-/* Base ---------------------------------------------------- */
-
-/* Games --------------------------------------------------- */
-.game-table tr td {
-	padding-left: 10px;
-	padding-right: 10px;
-	align: center;
-	text-align: center;
-	font-size: 2em;
+@media only screen and (min-width: 850px) {
+    .desc-box p {
+        font-size: 22px;
+    }
 }
-.game-table {
-	background-color: #e6e6f0;
+.desc-box {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(#708CA8, #5d7994);
+    padding: 50px 50px;
 }
-/* Games --------------------------------------------------- */
-
-/* Settings ------------------------------------------------ */
-.favicon-btn {
-	background-color: #839FB9;
-	border: 4px solid #64829e;
-	border-radius: 20px;
-	padding: 5px;
-}
-/* Settings ------------------------------------------------ */
-
-/* Footer -------------------------------------------------- */
-footer{
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background: #64829e;
-	height: auto;
-	width: 100vw;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	color: #ffffff;
-	text-align: center;
-}
-.footer-links {
-	padding-top: 18px;
-}
-.footer-links a{
-	color: #cfd2d6;
-	border: 1.3px solid white;
-	padding: 6px 15px;
-	border-radius: 50px;
-	text-decoration: none;
-}
-.footer-links a:hover{
-	color: #ffffff;
-}
-/* Footer -------------------------------------------------- */
-
-/* Nav Bar ------------------------------------------------- */
-#header-title {
-	text-decoration: none;
-	color: white;
+.desc-box h2, .desc-box p {
+    text-align: center;
+    color: #ffffff;
 }
 
-.body-text {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-top: 250px;
+/* Navbar w/ Mobile Fix*/
+@media only screen and (max-width: 850px) {
+    .header {
+        display: none;
+    }
 }
 .nav {
 	display: flex;
@@ -111,16 +61,20 @@ footer{
 	min-height: 8vh;
 	background-color: #64829e;
 }
-.heading {
+.header {
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 	font-size: 20px;
 }
+.header-text {
+	text-decoration: none;
+	color: white;
+}
 .nav-links {
 	display: flex;
 	justify-content: space-around;
-	width: 50%;
+	width: 45%;
 }
 .nav-links li {
 	list-style: none;
@@ -134,10 +88,28 @@ footer{
 	padding: 14px 16px;
 	width: 110%;
 }
-.nav-links a:hover:not(#nav-active-link) {
+.nav-links a:hover:not(#nav-links-active), #nav-links-active a {
 	background-color: #708CA8;
 }
-#nav-active-link a {
-	background-color: #708CA8;
+/* Header Image */
+.img-header {
+    width: 100%;
 }
-/* Nav Bar ------------------------------------------------- */
+
+/* Footer */
+.footer {
+    left: 0;
+    bottom: 0;
+    background-color: #64829e;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+.footer-link a {
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.footer-link {
+    margin-top: 15px;
+    text-align: center;
+}
