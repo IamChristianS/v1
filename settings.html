@@ -18,109 +18,109 @@
 <html>
 	<head>
 		<!--Display-->
-        <title>Project-Hub | Settings</title>
-        <link rel="icon" href="favicon.ico">
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
-        <script src="icon_changer.js"></script> 
-        <!--Meta-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Styling-->
-        <style>
-            /* Table */
-            .table thead {
-                background-color: #64829e;
-                color: white;
-            }
-            .table thead th {
-                padding: .5vw 1vw;
-            }
-	    .table tbody tr td a {
-		text-decoration: none;
-                padding: 1vw;
-	    }
-            .table tbody tr td a:hover {
-		color: #0a0082;
-	    }
+		<title>Project-Hub | Settings</title>
+		<link rel="icon" href="favicon.ico">
+		<!--Stylesheets-->
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+		<script src="icon_changer.js"></script> 
+		<!--Meta-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Styling-->
+		<style>
+		    /* Table */
+		    .table thead {
+			background-color: #64829e;
+			color: white;
+		    }
+		    .table thead th {
+			padding: .5vw 1vw;
+		    }
+		    .table tbody tr td a {
+			text-decoration: none;
+			padding: 1vw;
+		    }
+		    .table tbody tr td a:hover {
+			color: #0a0082;
+		    }
 
-            /* Tab Name Changer w/ Mobile Fix */
-            @media screen and (max-width: 1280px) {
-                .input-box {
-                    height: 6vw;
-                    width: 40vw;
-                }
-            }
-            @media screen and (min-width: 1280px) {
-                .input-box {
-                    height: 3vw;
-                    width: 20vw;
-                }
-            }
-            .input-box {
-                border: 1px solid transparent;
-                border-radius: 10px;
-                text-align: center;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                color: #4f677d;
-            }
-            .reset-btn-text {
-                cursor: pointer;
-                text-align: center;
-                padding: 10px 10px;
-                border: 1px solid transparent;
-                border-radius: 10px;
-                color: #4f677d;
-                font-weight: bold;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin-top: 1vw;
-            }
+		    /* Tab Name Changer w/ Mobile Fix */
+		    @media screen and (max-width: 1280px) {
+			.input-box {
+			    height: 6vw;
+			    width: 40vw;
+			}
+		    }
+		    @media screen and (min-width: 1280px) {
+			.input-box {
+			    height: 3vw;
+			    width: 20vw;
+			}
+		    }
+		    .input-box {
+			border: 1px solid transparent;
+			border-radius: 10px;
+			text-align: center;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			color: #4f677d;
+		    }
+		    .reset-btn-text {
+			cursor: pointer;
+			text-align: center;
+			padding: 10px 10px;
+			border: 1px solid transparent;
+			border-radius: 10px;
+			color: #4f677d;
+			font-weight: bold;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			margin-top: 1vw;
+		    }
 
-            /* Favicon Buttons w/ Mobile Fix*/
-            @media screen and (max-width: 1280px) {
-                .icon-btn img {
-                    height: 6vw;
-                }
-            }
-            @media screen and (min-width: 1280px) {
-                .icon-btn img {
-                    height: 4.5vw;
-                }
-            }
-            .icon-btn {
-                background: transparent;
-                border: none;
-                cursor: pointer;
-            }
-            .icon-btn img {
-                padding: 10px;
-                border: 1px solid transparent;
-                border-radius: 25px;
-                background-color: #8faac4;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            .reset-btn {
-                cursor: pointer;
-                text-align: center;
-                padding: 5px 100px;
-                border: 1px solid transparent;
-                border-radius: 15px;
-                color: #4f677d;
-                font-weight: bold;
-                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                margin-top: 1vw;
-            }
-            .reset-btn img {
-                height: 3vw;
-                padding: 10px;
-                border: 1px solid transparent;
-                border-radius: 25px;
-            }
-        </style>
+		    /* Favicon Buttons w/ Mobile Fix*/
+		    @media screen and (max-width: 1280px) {
+			.icon-btn img {
+			    height: 6vw;
+			}
+		    }
+		    @media screen and (min-width: 1280px) {
+			.icon-btn img {
+			    height: 4.5vw;
+			}
+		    }
+		    .icon-btn {
+			background: transparent;
+			border: none;
+			cursor: pointer;
+		    }
+		    .icon-btn img {
+			padding: 10px;
+			border: 1px solid transparent;
+			border-radius: 25px;
+			background-color: #8faac4;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		    }
+		    .reset-btn {
+			cursor: pointer;
+			text-align: center;
+			padding: 5px 100px;
+			border: 1px solid transparent;
+			border-radius: 15px;
+			color: #4f677d;
+			font-weight: bold;
+			box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			margin-top: 1vw;
+		    }
+		    .reset-btn img {
+			height: 3vw;
+			padding: 10px;
+			border: 1px solid transparent;
+			border-radius: 25px;
+		    }
+		</style>
 	</head>
 	<body>
 		<!--Navbar-->
@@ -154,7 +154,7 @@
 			<button class="reset-btn" onclick="updateFavicon(this.querySelector('img').id)"><img src="icons/default.ico" id="favicon-button-9">Reset</button>
 			<!--Tab Name Changer-->
 			<h2 style="font-weight:bold;padding-top: 2vw;">Tab Name Changer</h2>
-			<form action="set-title.php" method="get">
+			<form>
 			    <input class="input-box" type="text" id="newTitle" placeholder="Blank for Default"><br>
 			    <button class="reset-btn-text" onclick="changeTitle()">Submit</button>
 			</form>
