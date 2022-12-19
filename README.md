@@ -28,6 +28,7 @@ I'm an amature student who likes to work on small-time projects in my spare time
 ### Games
 - [ ]  Add FNaF 1/2/3
 - [ ]  Duck Life 3/4
+- [ ]  Learn to Fly 3
 
 ## Acknowledgements
 Each game that I curate is located within the **Settings** of the site.
