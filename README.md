@@ -21,8 +21,6 @@ I'm an amature student who likes to work on small-time projects in my spare time
 - [x]  Revamp Website
 - [x]  Revamp ReadMe
 - [x]  Update Licensing
-- [ ]  Fix Favicons Not Loading
-- [ ]  Fix Footer Link/Text
 - [ ]  Add Dark/Light Mode
 - [ ]  Fullscreen Flash Games
 - [ ]  Add Game Logos
@@ -30,6 +28,9 @@ I'm an amature student who likes to work on small-time projects in my spare time
 - [ ]  Add FNaF 1/2/3
 - [ ]  Duck Life 3/4
 - [ ]  Learn to Fly 3
+### Bugs
+- [x]  Fix Favicons Not Loading
+- [x]  Fix Footer Link/Text
 
 ## Acknowledgements
 Each game that I curate is located within the ***Settings*** of the site.
