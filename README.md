@@ -12,9 +12,9 @@ This project is meant to serve as a hub for any game (web or ports) to be run wh
 - Constantly Updating
 - Open-Source
 
-# Hi, I'm Christian! 👋
+# Hi, I'm Christian!
 
-## 🚀 About Me
+## About Me
 I'm an amature student who likes to work on small-time projects in my spare time!
 
 ## Roadmap
