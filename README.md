@@ -22,6 +22,7 @@ I'm an amature student who likes to work on small-time projects in my spare time
 - [x]  Revamp ReadMe
 - [x]  Update Licensing
 - [ ]  Fix Favicons Not Loading
+- [ ]  Fix Footer Link/Text
 - [ ]  Add Dark/Light Mode
 - [ ]  Fullscreen Flash Games
 - [ ]  Add Game Logos
@@ -31,7 +32,7 @@ I'm an amature student who likes to work on small-time projects in my spare time
 - [ ]  Learn to Fly 3
 
 ## Acknowledgements
-Each game that I curate is located within the **Settings** of the site.
+Each game that I curate is located within the ***Settings*** of the site.
 - [Flash](https://ruffle.rs)
 - [Game Boy Advance](https://github.com/taisel/IodineGBA)
 
