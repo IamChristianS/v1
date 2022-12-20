@@ -30,13 +30,8 @@ I'm an amature student who likes to work on small-time projects in my spare time
 - [ ]  Add Dark/Light Mode
 - [ ]  Fullscreen Flash Games
 - [ ]  Add Game Logos
-### Games
-- [ ]  Add FNaF 1/2/3
-- [ ]  Duck Life 3/4
-- [ ]  Learn to Fly 3
-### Bugs
-- [x]  Fix Favicons Not Loading
-- [x]  Fix Footer Link/Text
+### Games & Bugs
+Any games or bugs being suggested can be dones in the ***Issues*** tab in this repo.
 
 ## Acknowledgements
 Each game that I curate is located within the ***Settings*** of the site.
