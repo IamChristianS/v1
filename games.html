@@ -24,6 +24,8 @@
 		<link rel="stylesheet" href="stylesheet.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+		<link rel="stylesheet" href="hover.css"> <!--Hover.CSS Library-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
 		<!--Meta-->
@@ -45,18 +47,38 @@
 	</head>
 	<body>
 		<!--Navbar-->
-        <nav class="nav">
-			<div class="header">
-				<h4><a href="index.html" class="header-text">Project-Hub</a></h4>
-			</div>
-			<ul class="nav-links">
-				<li><a href="index.html">Home</a></li>
-				<li id="nav-links-active"><a href="games.html">Games</a></li>
-				<li><a href="contact.html">Contact</a></li>
-				<li><a href="settings.html">Settings</a></li>
-				<li><a href="https://www.github.com/santangeloChristian/Project-Hub" target="_blank">GitHub</a></li>
-			</ul>
-		</nav>
+        <div class="nav" style="display: flex;">
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1100"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"><a href="index.html">Home</a></button>
+            <button class="hvr-underline-from-center active"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"><a href="games.html">Games</a></button>
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"><a href="contact.html">Contact</a></button>
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="800"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"><a href="settings.html">Settings</a></button>
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="700"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"><a href="https://www.github.com/santangeloChristian/Project-Hub">GitHub</a></button>
+        </div>
         <!--Header Image-->
         <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
         
@@ -508,6 +530,11 @@
                     document.title = storedTitle;
                 }
             }
+        </script>
+		<!--AOS Library-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
 	</body>
 </html>

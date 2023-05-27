@@ -18,6 +18,8 @@
 body {
     margin: 0;
     font-family: 'Montserrat', Courier, monospace;
+    text-decoration: none;
+    scrollbar-width: 0;
 }
 #incomplete, #incompatible {
 	display: none;	
@@ -49,47 +51,29 @@ body {
 }
 
 /* Navbar w/ Mobile Fix*/
-@media only screen and (max-width: 850px) {
-    .header {
-        display: none;
-    }
-}
 .nav {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	min-height: 8vh;
-	background-color: #64829e;
+    background: linear-gradient(to bottom, #708CA8, #5d7994);
+    background-repeat: no-repeat;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
-.header {
-	color: white;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	font-size: 20px;
+.nav button {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 1vw;
+    border-style: none;
+    background-color: transparent;
+    font-size: 2.5vh;
 }
-.header-text {
-	text-decoration: none;
-	color: white;
-}
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	width: 45%;
-}
-.nav-links li {
-	list-style: none;
-}
-.nav-links a {
-	color: white;
-	text-decoration: none;
-	letter-spacing: 3px;
-	font-weight: bold;
-	font-size: 14px;
-	padding: 14px 16px;
-	width: 110%;
-}
-.nav-links a:hover:not(#nav-links-active), #nav-links-active a {
-	background-color: #708CA8;
+.nav button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', Courier, monospace;
+    font-weight: bold;
 }
 /* Header Image */
 .img-header {
