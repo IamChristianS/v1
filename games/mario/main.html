@@ -20,6 +20,14 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
+        <script>
+            gtag('event', 'game_start', {
+                'event_category': 'Games',
+                'event_label': 'mario',
+                'value': 1  // Optional value associated with the event
+            });
+        </script>
+        <!--Google Analytics-->
 	</head>
 	<body onload="resizeCanvas();">
 		<canvas id="canvas">
