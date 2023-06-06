@@ -50,7 +50,7 @@ body {
     color: #ffffff;
 }
 
-/* Navbar */
+/* Navbar w/ Mobile Fix */
 .nav {
     background: linear-gradient(to bottom, #708CA8, #5d7994);
     background-repeat: no-repeat;
@@ -78,6 +78,7 @@ body {
 @media screen and (max-width: 768px) {
     .nav {
         flex-wrap: wrap;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
     .nav button {
         flex: 1 1 100%;
@@ -96,9 +97,14 @@ body {
     }
 }
 
-/* Header Image */
-.img-header {
+/* Header Image w/ Mobile Fix */
+.img-header, .index-img-header {
     width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .img-header {
+        display: none;
+    }
 }
 
 /* Footer */
