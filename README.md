@@ -1,4 +1,4 @@
-![Logo](https://i.ibb.co/CHkPGZ6/project-hub-title.png)
+![Logo](https://i.ibb.co/mFcmSdd/project-hub-title.png)
 <div align="center">
   <a href="https://opensource.org/licenses/"><img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style=for-the-badge&logo=appveyor"></a>
   <a href="https://github.com/unbl0ck/project-hub/network/members"><img src="https://img.shields.io/github/forks/unbl0ck/project-hub?style=for-the-badge&logo=github"></a>
