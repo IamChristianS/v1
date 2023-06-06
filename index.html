@@ -166,7 +166,9 @@
                 </span>
             </p>
         </div>
-
+        <div id="game-showcase">
+          <!-- Game data will be dynamically inserted here -->
+        </div>
         <!--Footer-->
         <img src="img/index_footer.svg" alt="Image couldn't load." class="index-img-header">
         <footer class="footer">
@@ -177,6 +179,73 @@
                 <a href="privacy.html" class="w3-text-white w3-border w3-round-xxlarge">Privacy Notice</a>
             </div>
         </footer>
+        <!--Game Showcase-->
+        <script>
+          fetch('https://analyticsreporting.googleapis.com/v4/reports:batchGet', {
+            method: 'POST',
+            headers: {
+              'Authorization': 'Bearer 584897789543-74ls3ooun6u63k0r8oqskbotrcb4nhjs.apps.googleusercontent.com',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              'reportRequests': [
+                {
+                  'viewId': '347141552',
+                  'dateRanges': [
+                    {
+                      'startDate': '2023-06-01',
+                      'endDate': '2023-06-06'
+                    }
+                  ],
+                  'metrics': [
+                    {
+                      'expression': 'ga:totalEvents'
+                    }
+                  ],
+                  'dimensions': [
+                    {
+                      'name': 'ga:eventLabel'
+                    }
+                  ],
+                  'dimensionFilterClauses': [
+                    {
+                      'filters': [
+                        {
+                          'dimensionName': 'ga:eventCategory',
+                          'operator': 'EXACT',
+                          'expressions': ['Games']
+                        }
+                      ]
+                    }
+                  ],
+                  'orderBys': [
+                    {
+                      'fieldName': 'ga:totalEvents',
+                      'sortOrder': 'DESCENDING'
+                    }
+                  ],
+                  'pageSize': 5
+                }
+              ]
+            })
+          })
+            .then(response => response.json())
+            .then(data => {
+              // Process the game data and generate HTML for each game
+              const gameHTML = data.reports[0].data.rows.map(row => `
+                <div class="game">
+                  <h3>${row.dimensions[0]}</h3>
+                  <p>Players: ${row.metrics[0].values[0]}</p>
+                </div>
+              `).join('');
+          
+              // Insert the generated HTML into the game showcase section
+              document.getElementById('game-showcase').innerHTML = gameHTML;
+            })
+            .catch(error => {
+              console.error('Error fetching game data:', error);
+            });
+        </script>
         <!-- Copy URL -->
         <script>
             function copyToClipboard(text) {
@@ -186,8 +255,7 @@
             el.style.position = 'absolute';
             el.style.left = '-9999px';
             document.body.appendChild(el);
-        
-            // Save and restore the current selection
+
             const selected =
                 document.getSelection().rangeCount > 0
                 ? document.getSelection().getRangeAt(0)
@@ -196,8 +264,7 @@
             el.select();
             document.execCommand('copy');
             document.body.removeChild(el);
-        
-            // Restore the selection if it was previously saved
+
             if (selected) {
                 document.getSelection().removeAllRanges();
                 document.getSelection().addRange(selected);
