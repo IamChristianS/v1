@@ -10,7 +10,6 @@ const faviconUrls = {
   8: 'https://i.ibb.co/CKrRjCG/turnitin.png',
   9: 'https://i.ibb.co/KW8NVz7/default.png'
 };
-
 const buttons = document.querySelectorAll('button');
 
 // Adds Click Listeners
