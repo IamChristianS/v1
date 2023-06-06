@@ -44,6 +44,7 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5694462314366035" crossorigin="anonymous"></script>
 		<!--Styling-->
 		<style>
+			/* Game Grid */
 			.game-grid {
 				display: grid;
 				grid-template-columns: repeat(4, 1fr);
@@ -64,6 +65,11 @@
 				text-decoration: none;
 				font-weight: 900;
 				font-size: 3vh;
+			}
+			@media screen and (max-width: 768px) {
+				.game-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
 			}
 		</style>
 	</head>
@@ -88,18 +94,20 @@
                 data-aos-duration="900"
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"><a href="contact.html">Contact</a></button>
-            <button class="hvr-underline-from-center"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="settings.html">Settings</a></button>
-            <button class="hvr-underline-from-center"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="700"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="https://github.com/unbl0ck/unbl0ck.github.io">GitHub</a></button>
+            <div id="mobile-removables">
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"><a href="settings.html">Settings</a></button>
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"><a href="https://github.com/unbl0ck/unbl0ck.github.io">GitHub</a></button>
+            </div>
         </div>
         <!--Header Image-->
         <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">

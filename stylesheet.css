@@ -50,7 +50,7 @@ body {
     color: #ffffff;
 }
 
-/* Navbar w/ Mobile Fix*/
+/* Navbar */
 .nav {
     background: linear-gradient(to bottom, #708CA8, #5d7994);
     background-repeat: no-repeat;
@@ -75,6 +75,27 @@ body {
     font-family: 'Montserrat', Courier, monospace;
     font-weight: bold;
 }
+@media screen and (max-width: 768px) {
+    .nav {
+        flex-wrap: wrap;
+    }
+    .nav button {
+        flex: 1 1 100%;
+        padding: 0.25rem 1rem;
+        margin: 1vh 0;
+        font-size: 2vh;
+    }
+    #mobile-removables, #mobile-removables a {
+        display: none;
+    }
+    .hvr-underline-from-center:before {
+        height: 2px;
+    }
+    .active:before {
+        height: 2px;
+    }
+}
+
 /* Header Image */
 .img-header {
     width: 100%;
@@ -96,4 +117,12 @@ body {
 .footer-link {
     margin-top: 15px;
     text-align: center;
+}
+@media screen and (max-width: 768px) {
+    .footer {
+        padding-top: 15px;
+        padding-bottom: 20px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 }

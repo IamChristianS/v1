@@ -64,6 +64,42 @@
                 background-color: #64829e;
                 color: white;
             }
+
+            /* Copied Button */
+            .copy-button {
+                position: relative;
+                display: inline-block;
+            }
+            .copy-button .copy-prompt {
+                position: absolute;
+                top: calc(-100% - 10px);
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 6px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: white;
+                border-radius: 5px;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 0.5s, top 0.5s;
+                font-size: 16px;
+                font-family: 'Montserrat', Courier, monospace;
+                letter-spacing: -.5px;
+            }
+            .copy-button .copy-prompt::before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                border-width: 3px;
+                border-style: solid;
+                border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+            }
+            .copy-button.clicked .copy-prompt {
+                opacity: 1;
+                pointer-events: auto;
+            }
         </style>
     </head>
     <body>
@@ -87,18 +123,20 @@
                 data-aos-duration="900"
                 data-aos-easing="ease-in-out"
                 data-aos-once="true"><a href="contact.html">Contact</a></button>
-            <button class="hvr-underline-from-center"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="800"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="settings.html">Settings</a></button>
-            <button class="hvr-underline-from-center"
-                data-aos="fade-down"
-                data-aos-delay="50"
-                data-aos-duration="700"
-                data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="https://github.com/unbl0ck/unbl0ck.github.io">GitHub</a></button>
+            <div id="mobile-removables">
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"><a href="settings.html">Settings</a></button>
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"><a href="https://github.com/unbl0ck/unbl0ck.github.io">GitHub</a></button>
+            </div>
         </div>
         <!--Header Image-->
         <img src="img/header.png" alt="Image couldn't load." class="img-header">
@@ -107,9 +145,13 @@
         <!--Description-->
         <div class="desc-box">
             <h2 style="font-weight:bold;"><i class="fa-solid fa-triangle-exclamation"></i> Important Notice <i class="fa-solid fa-triangle-exclamation"></i></h2>
-            <p>This site will always be changing from user suggestions.</p>
-            <p>If you want a game to be added, please check out my contact information.</p>
-            <p>Keep in mind that I am a singular student who manages this site, so my response may not be immediate.</p>
+            <p>The site URL has changed again! This should be the last one.</p>
+            <p>If you have a friend who doesn't have it, share it!
+                <span class="copy-button" onclick="copyToClipboard('unbl0ck.github.io')">
+                    <i class="fa-regular fa-copy"></i>
+                    <span class="copy-prompt">Copied!</span>
+                </span>
+            </p>
         </div>
 
         <!--Footer-->
@@ -122,7 +164,57 @@
                 <a href="privacy.html" class="w3-text-white w3-border w3-round-xxlarge">Privacy Notice</a>
             </div>
         </footer>
-        <!--First Time Popup-->
+        <!-- Copy URL -->
+        <script>
+            function copyToClipboard(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            el.setAttribute('readonly', '');
+            el.style.position = 'absolute';
+            el.style.left = '-9999px';
+            document.body.appendChild(el);
+        
+            // Save and restore the current selection
+            const selected =
+                document.getSelection().rangeCount > 0
+                ? document.getSelection().getRangeAt(0)
+                : false;
+        
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+        
+            // Restore the selection if it was previously saved
+            if (selected) {
+                document.getSelection().removeAllRanges();
+                document.getSelection().addRange(selected);
+            }
+        
+            showCopiedPrompt();
+            }
+        
+            function showCopiedPrompt() {
+            const copiedPrompt = document.createElement('div');
+            copiedPrompt.innerText = 'Copied!';
+            copiedPrompt.className = 'copy-prompt';
+        
+            document.querySelector('.copy-button').classList.add('clicked');
+            document.querySelector('.copy-button').appendChild(copiedPrompt);
+        
+            setTimeout(() => {
+                copiedPrompt.style.opacity = 0;
+                setTimeout(() => {
+                copiedPrompt.parentNode.removeChild(copiedPrompt);
+                document.querySelector('.copy-button').classList.remove('clicked');
+                }, 600);
+            }, 2000);
+            }
+        </script>
+        <!--Disable Context-Menu-->
+        <script>
+            document.addEventListener('contextmenu', event => event.preventDefault());
+        </script>
+        <!--First-Time Popup-->
         <div id="first-time-popup" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); display: none;">
             <div class="alert" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <h1 style="font-weight: bold;">Project-Hub</h1>
@@ -133,11 +225,6 @@
                 </center>
             </div>
         </div>
-        <!--Disable Context-Menu-->
-        <script>
-            document.addEventListener('contextmenu', event => event.preventDefault());
-        </script>
-        <!--First-Time Popup-->
         <script>
             if (localStorage.getItem("!firstTimePopupSeen")) {
                 document.getElementById("first-time-popup").style.display = "block";
