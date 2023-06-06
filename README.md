@@ -1,16 +1,22 @@
-![Logo](https://i.ibb.co/mFcmSdd/project-hub-title.png)
-<div align="center">
+<!-- Project Logo -->
+<p align="center">
+  <img src="https://i.ibb.co/mFcmSdd/project-hub-title.png" alt="Logo">
+</p>
+
+<!-- Badges -->
+<p align="center">
   <a href="https://opensource.org/licenses/"><img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style=for-the-badge&logo=appveyor"></a>
   <a href="https://github.com/unbl0ck/project-hub/network/members"><img src="https://img.shields.io/github/forks/unbl0ck/project-hub?style=for-the-badge&logo=github"></a>
   <img src="https://img.shields.io/github/last-commit/unbl0ck/project-hub?logo=git&style=for-the-badge">
   <img src="https://img.shields.io/maintenance/yes/2023?style=for-the-badge">
-</div>
+</p>
 
-# Project-Hub
-This project is meant to serve as a hub for any game (web or ports) to be run whilst not being detected by an extensions blocking capabilities.
+<!-- Project Description -->
+<h1 align="center">Project-Hub</h1>
+<p align="center">This project serves as a hub for running games (web or ports) without being detected by extension blocking capabilities.</p>
 
 ## Features
-- Extensive Libray of Games
+- Extensive Library of Games
 - Multiple Emulators
 - Unblocked Games
 - Tab Favicon Changer
@@ -21,21 +27,34 @@ This project is meant to serve as a hub for any game (web or ports) to be run wh
 # Hi, I'm Christian!
 
 ## About Me
-I'm an amature student who likes to work on small-time projects in my spare time!
+<p>Hey, I'm Christian! 👋</p>
+<p>An amateur developer and high school student with a passion for web design and computer science. 🌟</p>
+<p>I love working on small hobby projects that allow me to explore my creativity and sharpen my skills. 🎨</p>
+<p>My main project is Project-Hub. 🚀</p>
+<p>It's a hub for running games while bypassing extension blocking capabilities. 🎮</p>
+<p>I'm constantly updating and improving this open-source project. 🔄</p>
 
-## Roadmap
-- [x]  Revamp Website
-- [x]  Revamp ReadMe
-- [x]  Update Licensing
-- [ ]  Add Dark/Light Mode
-- [ ]  Fullscreen Flash Games
-- [ ]  Add Game Logos
-### Games & Bugs
-Any games or bugs being suggested can be dones in the ***Issues*** tab in this repo.
+## Screenshots 📷
+<div align="center">
+  <img src="https://i.ibb.co/rGb9k0n/screenshot1.png" alt="Games Page" width="300">
+  <img src="https://i.ibb.co/QHk121X/screenshot2.png" alt="Settings Page" width="300">
+</div>
+<div align="center">
+  <img src="https://i.ibb.co/28KK7rc/screenshot3.png" alt="Cookie Clicker" width="300">
+  <img src="https://i.ibb.co/TrfPyVb/screenshot4.png" alt="Slope" width="300">
+</div>
+
+## Contributing
+Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request.
+You can also submit a contact form in the [Contact](https://unbl0ck.github.io/contact.html) page of the site.
 
 ## Acknowledgements
-Each game that I curate is located within the ***Settings*** of the site.
-- [Flash](https://ruffle.rs)
-- [Game Boy Advance](https://github.com/taisel/IodineGBA)
+Each game that I curate can be found in the ***Settings*** of the site.
 
-`This site is NOT to be used during any school and/or workplace envrionments where this type of site would be disallowed. By using this site, you agree that you are within a place that allows this site and any/all discrection is to the user.`
+Special thanks to the following projects and libraries:
+- [Ruffle](https://ruffle.rs) - Flash emulator
+- [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance emulator
+
+---
+
+**Important Note**: This site should not be used in school or workplace environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.
