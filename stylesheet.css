@@ -70,8 +70,8 @@ body {
     font-size: 2.5vh;
 }
 .nav button a {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     font-family: 'Montserrat', Courier, monospace;
     font-weight: bold;
 }
@@ -113,8 +113,8 @@ body {
     bottom: 0;
     background-color: #64829e;
     width: 100%;
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding: 20px 0px;
+    padding-bottom: 50px;
 }
 .footer-link a {
     text-decoration: none;
@@ -126,9 +126,7 @@ body {
 }
 @media screen and (max-width: 768px) {
     .footer {
-        padding-top: 15px;
-        padding-bottom: 20px;
-        padding-left: 50px;
-        padding-right: 50px;
+        padding: 20px 50px;
+        padding-bottom: 40px;
     }
 }

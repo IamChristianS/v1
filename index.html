@@ -113,6 +113,46 @@
                 opacity: 1;
                 pointer-events: auto;
             }
+            
+            /* Game Showcase */
+            #popular-games-title {
+              font-size:xx-large;
+              font-weight:bold;
+              color: #fff;
+              margin-top:30px;
+              margin-bottom: -5px;
+              background-color: #708CA8;
+              width: 20vw;
+              border-radius: 1000px;
+              font-family: 'Montserrat', Courier, monospace;
+            }
+            .popular-games {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              margin-top: 20px;
+            }
+            .popular-games div {
+              display: block;
+              padding: 10px;
+              margin: 0px 10px;
+              margin-bottom: 30px;
+              background-color: #708CA8;
+              border-radius: 10px;
+              transition: background-color 0.3s ease;
+              cursor: pointer;
+            }
+            .popular-games div p {
+              color: #fff;
+              font-weight: bold;
+              font-family: 'Montserrat', Courier, monospace;
+            }
+            .popular-games div img {
+              height: 25vh;
+            }
+            .popular-games div:hover {
+              background-color: #5d7994;
+            }
         </style>
     </head>
     <body>
@@ -123,32 +163,42 @@
                 data-aos-delay="50"
                 data-aos-duration="1100"
                 data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="index.html">Home</a></button>
+                data-aos-once="true"
+                onclick="window.location.href='index.html'"
+                style="cursor:pointer"><a>Home</a></button>
             <button class="hvr-underline-from-center"
                 data-aos="fade-down"
                 data-aos-delay="50"
                 data-aos-duration="1000"
                 data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="games.html">Games</a></button>
+                data-aos-once="true"
+                onclick="window.location.href='games.html'"
+                style="cursor:pointer"><a>Games</a></button>
             <button class="hvr-underline-from-center"
                 data-aos="fade-down"
                 data-aos-delay="50"
                 data-aos-duration="900"
                 data-aos-easing="ease-in-out"
-                data-aos-once="true"><a href="contact.html">Contact</a></button>
+                data-aos-once="true"
+                onclick="window.location.href='contact.html'"
+                style="cursor:pointer"><a>Contact</a></button>
             <div id="mobile-removables">
                 <button class="hvr-underline-from-center"
                     data-aos="fade-down"
                     data-aos-delay="50"
                     data-aos-duration="800"
                     data-aos-easing="ease-in-out"
-                    data-aos-once="true"><a href="settings.html">Settings</a></button>
+                    data-aos-once="true"
+                    onclick="window.location.href='settings.html'"
+                    style="cursor:pointer"><a>Settings</a></button>
                 <button class="hvr-underline-from-center"
                     data-aos="fade-down"
                     data-aos-delay="50"
                     data-aos-duration="700"
                     data-aos-easing="ease-in-out"
-                    data-aos-once="true"><a href="https://github.com/unbl0ck/unbl0ck.github.io">GitHub</a></button>
+                    data-aos-once="true"
+                    onclick="window.location.href='https://github.com/unbl0ck/unbl0ck.github.io'"
+                    style="cursor:pointer"><a>GitHub</a></button>
             </div>
         </div>
         <!--Header Image-->
@@ -166,11 +216,28 @@
                 </span>
             </p>
         </div>
-        <div id="game-showcase">
-          <!-- Game data will be dynamically inserted here -->
+        <!--Popular Games Showcase-->
+        <!--Street Fighter 2-->
+        <!--Super Mario 63-->
+        <!--Flappy Bird-->
+        <center><p id="popular-games-title">Popular Games</p></center>
+        <div class="popular-games">
+          <div onclick="window.location.href = 'cookie/index.html'">
+            <img src="games/img/cookclck.png">
+            <p style="font-size:x-large">Cookie Clicker</p>
+          </div>
+          <div onclick="window.location.href = 'games/supermario63/index.html'">
+            <img src="games/img/supermario63.png">
+            <p style="font-size:x-large">Super Mario 63</p>
+          </div>
+          <div onclick="window.location.href = 'games/slope/index.html'">
+            <img src="games/img/slope.png">
+            <p style="font-size:x-large">Slope</p>
+          </div>
         </div>
-        <!--Footer-->
-        <img src="img/index_footer.svg" alt="Image couldn't load." class="index-img-header">
+
+        <!--Footer-
+        <img src="img/index_footer.svg" alt="Image couldn't load." class="index-img-header">-->
         <footer class="footer">
             <p class="w3-center w3-text-white">Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
             <p class="w3-center w3-text-white">Disclaimer: This site should not be used during school/work, and I am not responsible for the users on this site.</p>
@@ -179,115 +246,49 @@
                 <a href="privacy.html" class="w3-text-white w3-border w3-round-xxlarge">Privacy Notice</a>
             </div>
         </footer>
-        <!--Game Showcase-->
-        <script>
-          fetch('https://analyticsreporting.googleapis.com/v4/reports:batchGet', {
-            method: 'POST',
-            headers: {
-              'Authorization': 'Bearer 584897789543-74ls3ooun6u63k0r8oqskbotrcb4nhjs.apps.googleusercontent.com',
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-              'reportRequests': [
-                {
-                  'viewId': '347141552',
-                  'dateRanges': [
-                    {
-                      'startDate': '2023-06-01',
-                      'endDate': '2023-06-06'
-                    }
-                  ],
-                  'metrics': [
-                    {
-                      'expression': 'ga:totalEvents'
-                    }
-                  ],
-                  'dimensions': [
-                    {
-                      'name': 'ga:eventLabel'
-                    }
-                  ],
-                  'dimensionFilterClauses': [
-                    {
-                      'filters': [
-                        {
-                          'dimensionName': 'ga:eventCategory',
-                          'operator': 'EXACT',
-                          'expressions': ['Games']
-                        }
-                      ]
-                    }
-                  ],
-                  'orderBys': [
-                    {
-                      'fieldName': 'ga:totalEvents',
-                      'sortOrder': 'DESCENDING'
-                    }
-                  ],
-                  'pageSize': 5
-                }
-              ]
-            })
-          })
-            .then(response => response.json())
-            .then(data => {
-              // Process the game data and generate HTML for each game
-              const gameHTML = data.reports[0].data.rows.map(row => `
-                <div class="game">
-                  <h3>${row.dimensions[0]}</h3>
-                  <p>Players: ${row.metrics[0].values[0]}</p>
-                </div>
-              `).join('');
-          
-              // Insert the generated HTML into the game showcase section
-              document.getElementById('game-showcase').innerHTML = gameHTML;
-            })
-            .catch(error => {
-              console.error('Error fetching game data:', error);
-            });
-        </script>
+
         <!-- Copy URL -->
         <script>
             function copyToClipboard(text) {
-            const el = document.createElement('textarea');
-            el.value = text;
-            el.setAttribute('readonly', '');
-            el.style.position = 'absolute';
-            el.style.left = '-9999px';
-            document.body.appendChild(el);
+              const el = document.createElement('textarea');
+              el.value = text;
+              el.setAttribute('readonly', '');
+              el.style.position = 'absolute';
+              el.style.left = '-9999px';
+              document.body.appendChild(el);
 
-            const selected =
-                document.getSelection().rangeCount > 0
-                ? document.getSelection().getRangeAt(0)
-                : false;
-        
-            el.select();
-            document.execCommand('copy');
-            document.body.removeChild(el);
+              const selected =
+                  document.getSelection().rangeCount > 0
+                  ? document.getSelection().getRangeAt(0)
+                  : false;
+          
+              el.select();
+              document.execCommand('copy');
+              document.body.removeChild(el);
 
-            if (selected) {
-                document.getSelection().removeAllRanges();
-                document.getSelection().addRange(selected);
-            }
-        
-            showCopiedPrompt();
+              if (selected) {
+                  document.getSelection().removeAllRanges();
+                  document.getSelection().addRange(selected);
+              }
+          
+              showCopiedPrompt();
             }
         
             function showCopiedPrompt() {
-            const copiedPrompt = document.createElement('div');
-            copiedPrompt.innerText = 'Copied!';
-            copiedPrompt.className = 'copy-prompt';
-        
-            document.querySelector('.copy-button').classList.add('clicked');
-            document.querySelector('.copy-button').appendChild(copiedPrompt);
-        
-            setTimeout(() => {
-                copiedPrompt.style.opacity = 0;
-                setTimeout(() => {
-                copiedPrompt.parentNode.removeChild(copiedPrompt);
-                document.querySelector('.copy-button').classList.remove('clicked');
-                }, 600);
-            }, 2000);
+              const copiedPrompt = document.createElement('div');
+              copiedPrompt.innerText = 'Copied!';
+              copiedPrompt.className = 'copy-prompt';
+          
+              document.querySelector('.copy-button').classList.add('clicked');
+              document.querySelector('.copy-button').appendChild(copiedPrompt);
+          
+              setTimeout(() => {
+                  copiedPrompt.style.opacity = 0;
+                  setTimeout(() => {
+                  copiedPrompt.parentNode.removeChild(copiedPrompt);
+                  document.querySelector('.copy-button').classList.remove('clicked');
+                  }, 600);
+              }, 2000);
             }
         </script>
         <!--Disable Context-Menu-->
