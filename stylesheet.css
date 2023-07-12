@@ -14,12 +14,12 @@
  █   █               █    ▐                                         
  ▐   ▐               ▐                                              
 */
+
 /* General */
 body {
-    margin: 0;
     font-family: 'Montserrat', Courier, monospace;
     text-decoration: none;
-    scrollbar-width: 0;
+    overflow-x: hidden;
 }
 #incomplete, #incompatible {
 	display: none;	
@@ -70,7 +70,7 @@ body {
     font-size: 2.5vh;
 }
 .nav button a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-family: 'Montserrat', Courier, monospace;
     font-weight: bold;
@@ -105,6 +105,9 @@ body {
     .img-header {
         display: none;
     }
+    .index-img-header {
+        height: 15vh;
+    }
 }
 
 /* Footer */
@@ -112,15 +115,34 @@ body {
     left: 0;
     bottom: 0;
     background-color: #64829e;
+    color: #ffffff;
     width: 100%;
     padding: 20px 0px;
     padding-bottom: 50px;
     margin-top: 25px;
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.footer-about {
+    font-size: 16px;
+    padding: 1vh 10vw;
+    padding-bottom: 2vh;
+}
+@media screen and (max-width: 768px) {
+    .footer-about {
+        padding: 1vh 0;
+    }
 }
 .footer-link a {
     text-decoration: none;
     padding: 5px 10px;
+    color: #eeeeee;
+    border: 1px solid #eeeeee;
+    border-radius: 100px;
+}
+.footer-link a:hover {
+    border-color: #ffffff;
+    color: #ffffff;
 }
 .footer-link {
     margin-top: 15px;
