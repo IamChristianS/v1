@@ -25,7 +25,7 @@ body {
 	display: none;	
 }
 /* Widebox */
-/* Description Box w/ Mobile Fix */
+/* Description Box */
 @media only screen and (max-width: 850px) {
     .desc-box h2 {
         font-size: 22px;
@@ -50,7 +50,7 @@ body {
     color: #ffffff;
 }
 
-/* Navbar w/ Mobile Fix */
+/* Navbar */
 .nav {
     background: linear-gradient(to bottom, #708CA8, #5d7994);
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ body {
     }
 }
 
-/* Header Image w/ Mobile Fix */
+/* Header Image */
 .img-header, .index-img-header {
     width: 100%;
 }
