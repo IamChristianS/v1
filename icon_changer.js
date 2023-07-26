@@ -1,4 +1,3 @@
-// Define the favicon URLs
 const faviconUrls = {
   1: 'https://i.ibb.co/kDxcVDx/canvas.png',
   2: 'https://i.ibb.co/YPyTYbJ/google-classroom.png',
@@ -12,21 +11,14 @@ const faviconUrls = {
 };
 const buttons = document.querySelectorAll('button');
 
-// Adds Click Listeners
 buttons.forEach(button => {
   button.addEventListener('click', event => {
-    // Get Btn ID
     const buttonId = event.target.id;
-
-    // Get Favicon URL
     const faviconUrl = faviconUrls[buttonId];
-
-    // Change Favicon
     changeFavicon(faviconUrl);
   });
 });
 
-// Update Favicon
 function changeFavicon(url) {
   const favicon = document.querySelector('link[rel="icon"]');
   favicon.href = url;

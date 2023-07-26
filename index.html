@@ -66,7 +66,7 @@
             .alert h1, p {
                 text-align: center;
             }
-            #alert-tos {
+            .alert-tos {
                 font-size: 12px;
             }
             .alert button {
@@ -75,7 +75,7 @@
                 border: 1px solid transparent;
                 border-radius: 25px;
                 background-color: #64829e;
-                color: white;
+                color: #ffffff;
             }
 
             /* Copied Button */
@@ -90,7 +90,7 @@
                 transform: translateX(-50%);
                 padding: 6px;
                 background-color: rgba(0, 0, 0, 0.8);
-                color: white;
+                color: #ffffff;
                 border-radius: 5px;
                 opacity: 0;
                 pointer-events: none;
@@ -115,10 +115,10 @@
             }
             
             /* Game Showcase */
-            #popular-games-title {
+            .popular-games-title {
               font-size:xx-large;
               font-weight:bold;
-              color: #fff;
+              color: #ffffff;
               margin-top:30px;
               margin-bottom: -5px;
               background-color: #708CA8;
@@ -127,17 +127,17 @@
               font-family: 'Montserrat', Courier, monospace;
             }
             @media screen and (max-width: 1500px) {
-                #popular-games-title {
+                .popular-games-title {
                   width: 25vw;
                 }
             }
             @media screen and (max-width: 1200px) {
-                #popular-games-title {
+                .popular-games-title {
                   width: 35vw;
                 }
             }
             @media screen and (max-width: 768px) {
-                #popular-games-title {
+                .popular-games-title {
                   width: 75%;
                 }
             }
@@ -158,7 +158,7 @@
               cursor: pointer;
             }
             .popular-games div p {
-              color: #fff;
+              color: #ffffff;
               font-weight: bold;
               font-family: 'Montserrat', Courier, monospace;
             }
@@ -219,9 +219,8 @@
         <!--Header Image-->
         <img src="img/header.png" alt="Image couldn't load." class="index-img-header">
 
-        <!--Content-->
         <!--Description-->
-        <div class="desc-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="wide-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <h2 style="font-weight:bold;"><i class="fa-solid fa-triangle-exclamation"></i> Important Notice <i class="fa-solid fa-triangle-exclamation"></i></h2>
             <p>The site URL has changed again! This should be the last one.</p>
             <p>If you have a friend who doesn't have it, share it!
@@ -231,8 +230,9 @@
                 </span>
             </p>
         </div>
+
         <!--Popular Games Showcase-->
-        <center><p id="popular-games-title">Popular Games</p></center>
+        <center><p class="popular-games-title">Popular Games</p></center>
         <div class="popular-games">
           <div onclick="window.location.href = 'cookie/index.html'">
             <img src="games/img/cookclck.png">
@@ -310,11 +310,11 @@
             document.addEventListener('contextmenu', event => event.preventDefault());
         </script>
         <!--First-Time Popup-->
-        <div id="first-time-popup" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); display: none;">
-            <div class="alert" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #fff; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <div class="first-time-popup" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); display: none;">
+            <div class="alert" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #ffffff; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
                 <h1 style="font-weight: bold;">Project-Hub</h1>
                 <p>By agreeing to this screen and thereby using this website in its entirety, you agree to the following terms:</p>
-                <p id="alert-tos">You are not within a school/learning environment where games are prohited. The owner and/or maintainer of this site is not liable for any emotional or physical damage done to the user. The owner and/or maintainer is not resposible and cannot be held accountable for any user's own actions, and the user is to be held accountable instead.</p>
+                <p class="alert-tos">You are not within a school/learning environment where games are prohited. The owner and/or maintainer of this site is not liable for any emotional or physical damage done to the user. The owner and/or maintainer is not resposible and cannot be held accountable for any user's own actions, and the user is to be held accountable instead.</p>
                 <center>
                     <button onclick="agree()">Agree</button>
                 </center>

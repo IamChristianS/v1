@@ -24,28 +24,29 @@ body {
 #incomplete, #incompatible {
 	display: none;	
 }
+
 /* Widebox */
 /* Description Box */
 @media only screen and (max-width: 850px) {
-    .desc-box h2 {
+    .wide-box h2 {
         font-size: 22px;
     }
-    .desc-box p {
+    .wide-box p {
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 850px) {
-    .desc-box p {
+    .wide-box p {
         font-size: 22px;
     }
 }
-.desc-box {
+.wide-box {
     width: 100%;
     height: auto;
     background: linear-gradient(#708CA8, #5d7994);
     padding: 50px 50px;
 }
-.desc-box h2, .desc-box p {
+.wide-box h2, .wide-box p {
     text-align: center;
     color: #ffffff;
 }
