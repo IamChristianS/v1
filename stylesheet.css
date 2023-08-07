@@ -76,7 +76,7 @@ body {
     font-family: 'Montserrat', Courier, monospace;
     font-weight: bold;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .nav {
         flex-wrap: wrap;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -102,12 +102,12 @@ body {
 .img-header, .index-img-header {
     width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     .img-header {
         display: none;
     }
     .index-img-header {
-        height: 15vh;
+        height: 25vh;
     }
 }
 
@@ -118,7 +118,7 @@ body {
     background-color: #64829e;
     color: #ffffff;
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 60px;
     padding-bottom: 50px;
     margin-top: 25px;
     box-shadow: 0 -4px 8px 0 rgba(0, 0, 0, 0.2), 0 -6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -132,6 +132,7 @@ body {
 @media screen and (max-width: 768px) {
     .footer-about {
         padding: 1vh 0;
+        font-size: 12px;
     }
 }
 .footer-link a {
@@ -151,7 +152,8 @@ body {
 }
 @media screen and (max-width: 768px) {
     .footer {
-        padding: 20px 50px;
+        padding: 20px 20px;
         padding-bottom: 40px;
+        font-size: 12px;
     }
 }

@@ -116,10 +116,10 @@
             
             /* Game Showcase */
             .popular-games-title {
-              font-size:xx-large;
-              font-weight:bold;
+              font-size: xx-large;
+              font-weight: bold;
               color: #ffffff;
-              margin-top:30px;
+              margin-top: 30px;
               margin-bottom: -5px;
               background-color: #708CA8;
               width: 20vw;
@@ -145,28 +145,46 @@
               display: flex;
               flex-wrap: wrap;
               justify-content: center;
-              margin-top: 20px;
+              margin: 20px 20vw;
             }
             .popular-games div {
-              display: block;
+              flex: 1;
+              margin: 5px;
               padding: 10px;
-              margin: 0px 10px;
-              margin-bottom: 30px;
               background-color: #708CA8;
               border-radius: 10px;
               transition: background-color 0.3s ease;
               cursor: pointer;
+              text-align: center;
             }
             .popular-games div p {
               color: #ffffff;
               font-weight: bold;
               font-family: 'Montserrat', Courier, monospace;
+              margin: 10px 0 0;
+              font-size: x-large;
             }
             .popular-games div img {
-              height: 25vh;
+              width: 100%;
+              max-height: 100%;
+              display: block;
+              border-radius: 5px;
             }
             .popular-games div:hover {
               background-color: #5d7994;
+            }
+            @media screen and (max-width: 1000px) {
+              .popular-games {
+                margin: 20px 8vw;
+              }
+            }
+            @media screen and (max-width: 768px) {
+              .popular-games div p {
+                font-size: large;
+              }
+              .popular-games {
+                margin: 20px 2vw;
+              }
             }
         </style>
     </head>
@@ -236,15 +254,15 @@
         <div class="popular-games">
           <div onclick="window.location.href = 'cookie/index.html'">
             <img src="games/img/cookclck.png">
-            <p style="font-size:x-large">Cookie Clicker</p>
+            <p>Cookie Clicker</p>
           </div>
           <div onclick="window.location.href = 'games/supermario63/index.html'">
             <img src="games/img/supermario63.png">
-            <p style="font-size:x-large">Super Mario 63</p>
+            <p>Super Mario 63</p>
           </div>
           <div onclick="window.location.href = 'games/slope/index.html'">
             <img src="games/img/slope.png">
-            <p style="font-size:x-large">Slope</p>
+            <p>Slope</p>
           </div>
         </div>
 

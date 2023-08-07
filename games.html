@@ -66,15 +66,26 @@
 				font-weight: 900;
 				font-size: 3vh;
 			}
+			@media screen and (max-width: 1200px) {
+				.game-grid {
+					grid-template-columns: repeat(3, 1fr);
+				}
+				.game-item img {
+					height: 160px;
+				}
+				.game-item a {
+					font-size: 2.5vh;
+				}
+			}
 			@media screen and (max-width: 768px) {
 				.game-grid {
 					grid-template-columns: repeat(2, 1fr);
 				}
 				.game-item img {
-					height: 120px;
+					height: 140px;
 				}
 				.game-item a {
-					font-size: 2vh;
+					font-size: 2.2vh;
 				}
 			}
 		</style>
