@@ -41,6 +41,8 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
+		<!--Scripts-->
+		<script src="startupScript.js"></script>
 		<!--Styling-->
 		<style>
 		    /* Table */
@@ -353,10 +355,6 @@
 			</div>
 		</footer>
 		
-		<!--Disable Context-Menu-->
-		<script>
-		    document.addEventListener('contextmenu', event => event.preventDefault());
-		</script>
 		<!--Save Favicon & Title-->
 		<script>
 		    function changeTitle() {
@@ -376,20 +374,6 @@
 				localStorage.setItem("faviconUrl", faviconUrl);
 
 				window.location.reload();
-		    }
-		</script>
-		<!--Update Favicon & Title-->
-		<script>
-		    window.onload = function() {
-				var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-				link.type = 'image/x-icon';
-				link.rel = 'shortcut icon';
-				link.href = localStorage.getItem("faviconUrl");
-				document.getElementsByTagName('head')[0].appendChild(link);
-				var storedTitle = localStorage.getItem("title");
-				if (storedTitle) {
-					document.title = storedTitle;
-				}
 		    }
 		</script>
 		<!--AOS Library-->

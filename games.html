@@ -31,7 +31,7 @@
 		<!--Meta-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--Google Analytics-->
+		<!--Google Analytics & Adsense-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -40,8 +40,9 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
-		<!--Google Adsense-->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5694462314366035" crossorigin="anonymous"></script>
+		<!--Scripts-->
+		<script src="startupScript.js"></script>
 		<!--Styling-->
 		<style>
 			/* Game Grid */
@@ -546,24 +547,6 @@
 			</div>
 		</footer>
 		
-        <!--Disable Context-Menu-->
-        <script>
-            document.addEventListener('contextmenu', event => event.preventDefault());
-        </script>
-        <!--Update Favicon & Title-->
-        <script>
-            window.onload = function() {
-                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-                link.type = 'image/x-icon';
-                link.rel = 'shortcut icon';
-                link.href = localStorage.getItem("faviconUrl");
-                document.getElementsByTagName('head')[0].appendChild(link);
-                var storedTitle = localStorage.getItem("title");
-                if (storedTitle) {
-                    document.title = storedTitle;
-                }
-            }
-        </script>
 		<!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>

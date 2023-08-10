@@ -31,6 +31,8 @@
 		<!--Meta-->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -38,6 +40,8 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
+        <!--Scripts-->
+		<script src="startupScript.js"></script>
 		<!--Styling-->
 		<style>
 		    .privacy-frame {
@@ -138,45 +142,6 @@
 			</div>
 		</footer>
         
-		<!--Disable Context-Menu-->
-		<script>
-		    document.addEventListener('contextmenu', event => event.preventDefault());
-		</script>
-		<!--Save Favicon & Title-->
-		<script>
-		    function changeTitle() {
-				var newTitle = document.getElementById("newTitle").value;
-				if (newTitle === "") {
-					localStorage.removeItem("title");
-				} else {
-					localStorage.setItem("title", newTitle);
-					document.title = newTitle;
-				}
-
-				window.location.reload();
-		    }
-
-		    function updateFavicon(id) {
-				var faviconUrl = document.getElementById(id).src;
-				localStorage.setItem("faviconUrl", faviconUrl);
-
-				window.location.reload();
-		    }
-		</script>
-		<!--Update Favicon & Title-->
-		<script>
-		    window.onload = function() {
-				var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-				link.type = 'image/x-icon';
-				link.rel = 'shortcut icon';
-				link.href = localStorage.getItem("faviconUrl");
-				document.getElementsByTagName('head')[0].appendChild(link);
-				var storedTitle = localStorage.getItem("title");
-				if (storedTitle) {
-					document.title = storedTitle;
-				}
-		    }
-		</script>
 		<!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>

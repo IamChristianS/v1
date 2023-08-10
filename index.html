@@ -44,7 +44,7 @@
         <meta name="language" content="en">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="robots" content="index,follow">
-        <!--Google Analytics-->
+        <!--Google Analytics & Adsense-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -53,8 +53,9 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
-        <!--Google Adsense-->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5694462314366035" crossorigin="anonymous"></script>
+        <!--Scripts-->
+		    <script src="startupScript.js"></script>
         <!--Styling-->
         <style>
             /* First Time Alert */
@@ -242,7 +243,7 @@
             <h2 style="font-weight:bold;"><i class="fa-solid fa-triangle-exclamation"></i> Important Notice <i class="fa-solid fa-triangle-exclamation"></i></h2>
             <p>The site URL has changed again! This should be the last one.</p>
             <p>If you have a friend who doesn't have it, share it!
-                <span class="copy-button" onclick="copyToClipboard('unbl0ck.github.io')">
+                <span class="copy-button" onclick="copyToClipboard('https://unbl0ck.github.io')">
                     <i class="fa-regular fa-copy" style="cursor:pointer"></i>
                     <span class="copy-prompt">Copied!</span>
                 </span>
@@ -323,10 +324,6 @@
               }, 2000);
             }
         </script>
-        <!--Disable Context-Menu-->
-        <script>
-            document.addEventListener('contextmenu', event => event.preventDefault());
-        </script>
         <!--First-Time Popup-->
         <div class="first-time-popup" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 0.8); display: none;">
             <div class="alert" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #ffffff; padding: 20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
@@ -346,20 +343,6 @@
             function agree() {
                 localStorage.setItem("firstTimePopupSeen", true);
                 document.getElementById("first-time-popup").style.display = "none";
-            }
-        </script>
-        <!--Update Favicon & Title-->
-        <script>
-            window.onload = function() {
-                var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
-                link.type = 'image/x-icon';
-                link.rel = 'shortcut icon';
-                link.href = localStorage.getItem("faviconUrl");
-                document.getElementsByTagName('head')[0].appendChild(link);
-                var storedTitle = localStorage.getItem("title");
-                if (storedTitle) {
-                    document.title = storedTitle;
-                }
             }
         </script>
         <!--AOS Library-->
