@@ -46,6 +46,9 @@
 		<!--Styling-->
 		<style>
 		    /* Table */
+			.table {
+				margin: 0 1vw;
+			}
 		    .table thead {
 				background-color: #64829e;
 				color: white;
@@ -61,6 +64,12 @@
 		    .table tbody tr td a:hover {
 				color: #7e78d1;
 		    }
+			/* Ad Container */
+			.ad-container {
+				padding: 2vw 0;
+				display: flex;
+				justify-content: center;
+			}
 
 		    /* Tab Name Changer w/ Mobile Fix */
 		    @media screen and (max-width: 1280px) {
@@ -200,27 +209,26 @@
 				<button class="reset-btn" onclick="updateFavicon(this.querySelector('img').id)"><img src="https://i.ibb.co/KW8NVz7/default.png" id="favicon-button-9">Reset</button>
 
 				<!--Tab Name Changer-->
-				<h2 style="font-weight:bold;padding-top: 2vw;">Tab Name Changer</h2>
+				<h2 style="font-weight:bold; padding-top: 2vw;">Tab Name Changer</h2>
 				<form>
 					<input class="input-box" type="text" id="newTitle" placeholder="Blank for Default"><br>
 					<button class="reset-btn-text" onclick="changeTitle()">Submit</button>
 				</form>
 		    </center>
 		</div>
+		<div class="ad-container">
+			<!--Ad Segment-->
+			<script type="text/javascript">
+				atOptions = {
+					'key' : '9829a949f693540dedb00b55e98e2653',
+					'format' : 'iframe',
+					'height' : 600,
+					'width' : 160,
+					'params' : {}
+				};
+				document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/9829a949f693540dedb00b55e98e2653/invoke.js"></scr' + 'ipt>');
+			</script>
 
-		<!--Ad Segment-->
-		<script type="text/javascript">
-			atOptions = {
-				'key' : '9829a949f693540dedb00b55e98e2653',
-				'format' : 'iframe',
-				'height' : 600,
-				'width' : 160,
-				'params' : {}
-			};
-			document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/9829a949f693540dedb00b55e98e2653/invoke.js"></scr' + 'ipt>');
-		</script>
-
-		<center style="padding: 2vw 0;">
 			<table class="w3-center w3-border table" style="background-color: snow; margin-bottom: 4vw; margin-top: 1vw;">
 				<thead>
 					<th>Game Name</th>
@@ -349,6 +357,8 @@
 					</tr>
 				</tbody>
 			</table>
+		</div>
+		<center>
 			<h3 style="font-weight:bold;">Copying Rights:</h3>
 			<p>GNU General Public License v3.0</p>
 			<p>As a short summary, you can take any part of this website. However, you must:</p>
