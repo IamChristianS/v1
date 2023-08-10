@@ -115,7 +115,7 @@
                 pointer-events: auto;
             }
             
-            /* Game Showcase */
+            /* Popular Game Showcase */
             .popular-games-title {
               font-size: xx-large;
               font-weight: bold;
@@ -153,7 +153,7 @@
               margin: 5px;
               padding: 10px;
               background-color: #708CA8;
-              border-radius: 10px;
+              border-radius: 1vw;
               transition: background-color 0.3s ease;
               cursor: pointer;
               text-align: center;
@@ -169,7 +169,6 @@
               width: 100%;
               max-height: 100%;
               display: block;
-              border-radius: 5px;
             }
             .popular-games div:hover {
               background-color: #5d7994;
@@ -178,6 +177,9 @@
               .popular-games {
                 margin: 20px 8vw;
               }
+              .popular-games div {
+                border-radius: 2vw;
+              }
             }
             @media screen and (max-width: 768px) {
               .popular-games div p {
@@ -185,6 +187,44 @@
               }
               .popular-games {
                 margin: 20px 2vw;
+              }
+            }
+
+            /* Frequently Asked Questions */
+            .faq-box {
+              background: linear-gradient(to bottom, #7b99b6, #6785a1);
+              color: #ffffff;
+              max-width: 40vw;
+              border-radius: 1vw;
+              padding: 1px 0;
+              margin: 1vh 0;
+            }
+            .faq-title {
+              text-align: left;
+              padding: 0 2vw;
+              font-weight: bold;
+              font-size: x-large;
+            }
+            .faq-qna {
+              text-align: left;
+              padding: 0 5vw;
+              font-size: large;
+              margin-top: -1vw;
+            }
+            @media screen and (max-width: 1200px) {
+              .faq-box {
+                max-width: 60vw;
+                border-radius: 2vw;
+              }
+            }
+            @media screen and (max-width: 1000px) {
+              .faq-box {
+                max-width: 75vw;
+              }
+            }
+            @media screen and (max-width: 768px) {
+              .faq-box {
+                max-width: 90vw;
               }
             }
         </style>
@@ -240,8 +280,8 @@
         <!--Description-->
         <div class="wide-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             <h2 style="font-weight:bold;"><i class="fa-solid fa-triangle-exclamation"></i> Important Notice <i class="fa-solid fa-triangle-exclamation"></i></h2>
-            <p>The site URL has changed again! This should be the last one.</p>
-            <p>If you have a friend who doesn't have it, share it!
+            <p>We are an everchanging community, which thrives off word-of-mouth.</p>
+            <p>If you have a friend who doesn't have our site, share it!
                 <span class="copy-button" onclick="copyToClipboard('https://unbl0ck.github.io')">
                     <i class="fa-regular fa-copy" style="cursor:pointer"></i>
                     <span class="copy-prompt">Copied!</span>
@@ -300,6 +340,35 @@
           };
           document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.profitablecreativeformat.com/0b8466ed8a4a9ee7f62f2011f9dbda5c/invoke.js"></scr' + 'ipt>');
         </script></center>
+
+        <!--Frequently Asked Questions-->
+        <center class="faq">
+          <p class="popular-games-title">FAQ:</p>
+          <div class="faq-box">
+            <p class="faq-title"><i class="fa-regular fa-circle-question"></i>   Question:</p>
+            <p class="faq-qna">Why are there ads, and is there any way of turning them off?</p>
+            <p class="faq-title"><i class="fa-regular fa-circle-check"></i>   Answer:</p>
+            <p class="faq-qna">Ads are there to simply support the maintaining of this site, and personally supports me, a very broke high school student. As for turning them off, we kindly ask you to not enable ad-blockers of sorts, as ads are not intrusive nor do they affect the site's function.</p>
+          </div>
+          <div class="faq-box">
+            <p class="faq-title"><i class="fa-regular fa-circle-question"></i>   Question:</p>
+            <p class="faq-qna">Where is _____ game?</p>
+            <p class="faq-title"><i class="fa-regular fa-circle-check"></i>   Answer:</p>
+            <p class="faq-qna">Sadly, we aren't able to find and host every game out there. However, if you see a game missing, use our <a href="contact.html">contact form</a> to reach us about what game you are looking for. Sometimes, albeit rarely, there are few games which we cannot host due to Flash/external limitations.</p>
+          </div>
+          <div class="faq-box">
+            <p class="faq-title"><i class="fa-regular fa-circle-question"></i>   Question:</p>
+            <p class="faq-qna">Can you add _____ feature?</p>
+            <p class="faq-title"><i class="fa-regular fa-circle-check"></i>   Answer:</p>
+            <p class="faq-qna">This mostly follows the same principles as our previous answer. If you have a feature that you are wanting to be added, please use our <a href="contact.html">contact form</a> to reach us. Alternativly, you can also visit the <a href="https://github.com/unbl0ck/unbl0ck.github.io">project's GitHub page</a>, and submit an issue.</p>
+          </div>
+          <div class="faq-box" id="incomplete">
+            <p class="faq-title"><i class="fa-regular fa-circle-question"></i>   Question:</p>
+            <p class="faq-qna">Example Question?</p>
+            <p class="faq-title"><i class="fa-regular fa-circle-check"></i>   Answer:</p>
+            <p class="faq-qna">Example Answer.</p>
+          </div>
+        </center>
         
         <!--Footer--->
         <footer class="footer">
