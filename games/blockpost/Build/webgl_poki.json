@@ -1,0 +1,13 @@
+{
+"companyName": "Skullcap Studios",
+"productName": "BLOCKPOST MOBILE",
+"dataUrl": "webgl_poki.data.unityweb",
+"wasmCodeUrl": "webgl_poki.wasm.code.unityweb",
+"wasmFrameworkUrl": "webgl_poki.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"}
+}
