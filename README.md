@@ -28,11 +28,11 @@
 
 ## About Me
 <p>Hey, I'm Christian! 👋</p>
-<p>An amateur developer and high school student with a passion for web design and computer science. 🌟</p>
-<p>I love working on small hobby projects that allow me to explore my creativity and sharpen my skills. 🎨</p>
-<p>My main project is Project-Hub. 🚀</p>
-<p>It's a hub for running games while bypassing extension blocking capabilities. 🎮</p>
-<p>I'm constantly updating and improving this open-source project. 🔄</p>
+<p>I'm an amateur developer, and high school student passionate about web design and computer science. 🌟</p>
+<p>I like working on small hobby projects that allow me to try new things and sharpen my skills. 🎨</p>
+<p>My main project is Project-Hub (Go check it out!). 🚀</p>
+<p>It's a hub for running games whilst bypassing extension-blocking capabilities. 🎮</p>
+<p>I'm constantly updating, and improving this project. 🔄</p>
 
 ## Screenshots 📷
 <div align="center">
@@ -46,14 +46,15 @@
 
 ## Contributing
 Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request.
-You can also submit a contact form in the [Contact](https://unbl0ck.github.io/contact.html) page of the site.
+You can also submit a contact form on the [Contact](https://unbl0ck.github.io/contact.html) page of the site.
 
 ## Acknowledgements
-Each game that I curate can be found in the ***Settings*** of the site.
+Each game I curate can be found in the ***Settings*** of the site.
 
 Special thanks to the following projects and libraries:
 - [Ruffle](https://ruffle.rs) - Flash emulator
 - [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance emulator
+- [3kh0](https://github.com/taisel/IodineGBA) - Some Game Ports (amazing person btw)
 
 ---
 
