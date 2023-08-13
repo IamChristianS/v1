@@ -40,6 +40,104 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
+        <!--Styling-->
+		<style>
+            /* Google Form */
+		    .form-container {
+                margin: 2vw 6vw;
+                display: flex;
+            }
+            .form-box {
+                background-color: #708CA8;
+                border-radius: 1vw;
+                width: 100vw;
+                margin: 0 1vw;
+            }
+            .form-title {
+                font-family: 'Montserrat', Courier, monospace;
+                font-size: large;
+                font-weight: bold;
+                color: #ffffff;
+            }
+            .form {
+                background-color: white;
+                max-height: 25vw;
+            }
+            @media screen and (max-width: 1200px) {
+                
+            }
+
+            /* Email Form */
+            .contact-container * {
+                box-sizing: border-box;
+                font-family: 'Montserrat', Courier, monospace;
+            }
+            .contact-container {
+                width: 75%;
+            }
+            .contact-form label {
+                display: block;
+                padding: 12px 0 6px 0;
+                letter-spacing: -0.2px;
+                cursor: text;
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .contact-form input, .contact-form textarea {
+                font-size: 16px;
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #e5e7eb;
+                border: none;
+                border: 4px solid #e5e7eb;
+                outline: none;
+                border-radius: 8px;
+                color: #9da3ae;
+            }
+            .contact-form input:focus, .contact-form textarea:focus {
+                background-color: #ffffff;
+                color: #9da3ae;
+            }
+            .contact-form input:focus:required:invalid {
+                border-color: #708CA8;
+                background-color: #ffffff;
+            }
+            .contact-form button {
+                display: block;
+                margin-top: 12px;
+                width: 100%;
+                padding: 12px 20px;
+                border-radius: 8px;
+                border-color: transparent;
+                background-color: #708CA8;
+                color: #ffffff;
+                font-weight: 700;
+                font-size: 18px;
+                transition: 300ms all;
+            }
+            .contact-form button:hover {
+                background-color: #5d7994;
+            }
+            .contact-alert {
+                padding: 12px;
+                border-radius: 10px;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 12px;
+                display: none;
+            }
+            .contact-alert.visible {
+                display: block;
+            }
+            .contact-alert.success {
+                background: #69cf9d;
+            }
+            .contact-alert.error {
+                background: #de524c;
+            }
+		</style>
     </head>
     <body>
         <!--Navbar-->
@@ -91,6 +189,58 @@
         <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 
         <!--Content-->
+        <center class="form-container">
+            <!--Ad Segment-->
+			<script>
+				var afg={};afg.u=6328;afg.s=5;
+				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+			</script>
+
+            <div class="form-box">
+                <p class="form-title">Game Request</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuv3_LcWKJ-8SJRzdFT48ml4S29DI9up24Bp5CA8FLJA-mnw/viewform?embedded=true"
+                    class="form"
+                    width="100%"
+                    height="800"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">Loading…
+                </iframe>
+            </div>
+            <div class="form-box" id="incomplete">
+                <p class="form-title">Contact Form</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebf0X_0bCTnUMxfTsbX5lUtl00Aspj_ktVKO3C5qN-tjqBsQ/viewform?embedded=true"
+                    class="form"
+                    width="100%"
+                    height="800"
+                    frameborder="0"
+                    marginheight="0"
+                    marginwidth="0">Loading…
+                </iframe>
+            </div>
+            <div class="contact-container">
+                <form action="form_process.php" method="POST" class="contact-form">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="fullName" required>
+
+                  <label for="email">Your Email Address</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="message">Your Message</label>
+                  <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                  <button type="submit">Send</button>
+                </form>
+              </div>
+              
+            <!--Ad Segment-->
+			<script>
+				var afg={};afg.u=6328;afg.s=5;
+				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+			</script>
+        </center>
+
+        <!--
         <center style="margin-bottom: 2vw; margin-top: 2vw;">
             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebf0X_0bCTnUMxfTsbX5lUtl00Aspj_ktVKO3C5qN-tjqBsQ/viewform?embedded=true" 
                     width="100%" 
@@ -100,6 +250,7 @@
                     marginwidth="0">Loading…
             </iframe>
         </center>
+        -->
 
         <!--Footer--->
         <footer class="footer">
