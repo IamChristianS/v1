@@ -1,0 +1,7 @@
+AVM 1:
+Language: 95%
+API: 75%
+
+AVM 2:
+Language: 70%
+API: 65%
