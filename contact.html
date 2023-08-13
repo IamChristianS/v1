@@ -50,7 +50,7 @@
             .form-box {
                 background-color: #708CA8;
                 border-radius: 1vw;
-                width: 100vw;
+                width: 75vw;
                 margin: 0 1vw;
             }
             .form-title {
@@ -64,17 +64,33 @@
                 max-height: 25vw;
             }
             @media screen and (max-width: 1200px) {
-                
+                .form-container {
+                    display: block;
+                }
+                .form-box {
+                    width: 100%;
+                }
+                .form {
+                    max-height: 45vw;
+                }
+                .form-title {
+                    padding-top: 2vw;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                .form {
+                    max-height: 125vw;
+                }
             }
 
             /* Email Form */
             .contact-container * {
                 box-sizing: border-box;
                 font-family: 'Montserrat', Courier, monospace;
-                margin: 0 1vw;
             }
             .contact-container {
                 width: 75%;
+                margin: 0 1vw;
             }
             .contact-form label {
                 display: block;
@@ -138,6 +154,11 @@
             .contact-alert.error {
                 background: #de524c;
             }
+            @media screen and (max-width: 1200px) {
+                .contact-container {
+                    width: 100%;
+                }
+            }
 		</style>
     </head>
     <body>
@@ -191,11 +212,11 @@
 
         <!--Content-->
         <center class="form-container">
-            <!--Ad Segment-->
+            <!--Ad Segment--
 			<script>
 				var afg={};afg.u=6328;afg.s=5;
 				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-			</script>
+			</script>-->
 
             <div class="form-box">
                 <p class="form-title">Game Request</p>
@@ -209,8 +230,8 @@
                 </iframe>
             </div>
             <div class="form-box" id="incomplete">
-                <p class="form-title">Contact Form</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebf0X_0bCTnUMxfTsbX5lUtl00Aspj_ktVKO3C5qN-tjqBsQ/viewform?embedded=true"
+                <p class="form-title">Example Form</p>
+                <iframe src="Link"
                     class="form"
                     width="100%"
                     height="800"
@@ -234,24 +255,12 @@
                 </form>
               </div>
               
-            <!--Ad Segment-->
+            <!--Ad Segment--
 			<script>
 				var afg={};afg.u=6328;afg.s=5;
 				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-			</script>
+			</script>-->
         </center>
-
-        <!--
-        <center style="margin-bottom: 2vw; margin-top: 2vw;">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSebf0X_0bCTnUMxfTsbX5lUtl00Aspj_ktVKO3C5qN-tjqBsQ/viewform?embedded=true" 
-                    width="100%" 
-                    height="800" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0">Loading…
-            </iframe>
-        </center>
-        -->
 
         <!--Footer--->
         <footer class="footer">
