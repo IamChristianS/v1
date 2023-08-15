@@ -32,7 +32,7 @@
 <p>I like working on small hobby projects that allow me to try new things and sharpen my skills. 🎨</p>
 <p>My main project is Project-Hub (Go check it out!). 🚀</p>
 <p>It's a hub for running games whilst bypassing extension-blocking capabilities. 🎮</p>
-<p>I'm constantly updating, and improving this project. 🔄</p>
+<p>I'm constantly updating, and improving this project, so go check it out. 🔄</p>
 
 ## Screenshots 📷
 <div align="center">
