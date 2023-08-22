@@ -1,0 +1,228 @@
+<!--
+ ▄▀▀▄▀▀▀▄  ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄         ▄█  ▄▀▀█▄▄▄▄  ▄▀▄▄▄▄   ▄▀▀▀█▀▀▄ 
+█   █   █ █   █   █ █      █  ▄▀▀▀█▀ ▐ ▐  ▄▀   ▐ █ █    ▌ █    █  ▐ 
+▐  █▀▀▀▀  ▐  █▀▀█▀  █      █ █    █      █▄▄▄▄▄  ▐ █      ▐   █     
+   █       ▄▀    █  ▀▄    ▄▀ ▐    █      █    ▌    █         █      
+ ▄▀       █     █     ▀▀▀▀     ▄   ▀▄   ▄▀▄▄▄▄    ▄▀▄▄▄▄▀  ▄▀       
+█         ▐     ▐               ▀▀▀▀    █    ▐   █     ▐  █         
+▐                                       ▐        ▐        ▐         
+ ▄▀▀▄ ▄▄   ▄▀▀▄ ▄▀▀▄  ▄▀▀█▄▄                                        
+█  █   ▄▀ █   █    █ ▐ ▄▀   █                                       
+▐  █▄▄▄█  ▐  █    █    █▄▄▄▀                                        
+   █   █    █    █     █   █                                        
+  ▄▀  ▄▀     ▀▄▄▄▄▀   ▄▀▄▄▄▀                                        
+ █   █               █    ▐                                         
+ ▐   ▐               ▐                                              
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--Display-->
+        <title>Eaglercraft Servers</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="../../../stylesheet.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+        <link rel="stylesheet" href="../../../hover.css"> <!--Hover.CSS Library-->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+        <!--Meta-->
+        <meta charset="UTF-8">
+        <meta name="language" content="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Google Analytics & Adsense-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M9KJ1XPKLF');
+        </script>
+        <!--Scripts-->
+		<script src="../../../startupScript.js"></script>
+        <script>
+            function copyText(text) {
+                navigator.clipboard.writeText(text);
+                alert("Server IP Copied: " + text);
+            }
+        </script>
+        <!--Styling-->
+        <style>
+            .links h2 {
+                text-align: center;
+                font-weight: bold;
+                margin-top: -1vw;
+                font-family: 'Montserrat', Courier, monospace;
+            }
+            .row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1vw 0;
+            }
+            .copyButton {
+                background: #708CA8;
+                border: none;
+                padding: 1vw;
+                width: 12vw;
+                color: white;
+                font-weight: bold;
+                font-size: large;
+                cursor: pointer;
+                border-radius: 4px;
+                margin-left: .5vw;
+                font-family: 'Montserrat', Courier, monospace;
+            }
+            .copyButton:hover {
+                background-color: #5d7994;
+            }
+            input {
+                background: #708CA8;
+                border: 2px solid #5d7994;
+                padding: 1vw;
+                color: white;
+                border-radius: 4px;
+                width: 16vw;
+                margin-right: .5vw;
+                font-family: 'Montserrat', Courier, monospace;
+            }
+            @media screen and (max-width: 1700px) {
+				input {
+                    width: 20vw;
+                }
+			}
+            @media screen and (max-width: 1500px) {
+				.copyButton {
+                    width: 16vw;
+                }
+			}
+            @media screen and (max-width: 1300px) {
+				input {
+                    width: 24vw;
+                }
+			}
+            @media screen and (max-width: 1100px) {
+				input {
+                    width: 30vw;
+                }
+                .copyButton {
+                    width: 20vw;
+                }
+			}
+        </style>
+    </head>
+    <body>
+        <!--Navbar-->
+        <div class="nav" style="display: flex;">
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1100"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                onclick="window.location.href='../../../index.html'"
+                style="cursor:pointer"><a>Home</a></button>
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                onclick="window.location.href='../../../games.html'"
+                style="cursor:pointer"><a>Games</a></button>
+            <button class="hvr-underline-from-center"
+                data-aos="fade-down"
+                data-aos-delay="50"
+                data-aos-duration="900"
+                data-aos-easing="ease-in-out"
+                data-aos-once="true"
+                onclick="window.location.href='../../../contact.html'"
+                style="cursor:pointer"><a>Contact</a></button>
+            <div id="mobile-removables">
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="800"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    onclick="window.location.href='../../../settings.html'"
+                    style="cursor:pointer"><a>Settings</a></button>
+                <button class="hvr-underline-from-center"
+                    data-aos="fade-down"
+                    data-aos-delay="50"
+                    data-aos-duration="700"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="true"
+                    onclick="window.location.href='https://github.com/unbl0ck/unbl0ck.github.io'"
+                    style="cursor:pointer"><a>GitHub</a></button>
+            </div>
+        </div>
+        
+        <!--Ad Segment--
+        <br><center><script>
+          var afg={};afg.u=6328;afg.s=4;
+          document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+        </script></center><br>-->
+
+        <div class="links" style="margin:3vw 0;">
+            <h2>Eaglercraft Servers:</h2>
+            <h2 style="font-weight: normal;">Version: 1.8.8</h2>
+
+            <div class="row">
+                <input value="wss://mc.arch.lol" disabled>
+                <button class="copyButton" onclick="copyText('wss://mc.arch.lol')">ArchMC</button>
+            </div>
+            <div class="row">
+                <input value="wss://beta.vanillacraftsmp.org" disabled>
+                <button class="copyButton" onclick="copyText('wss://beta.vanillacraftsmp.org')">VanillaCraft SMP</button>
+            </div>
+            <div class="row">
+                <input value="wss://zentic.cc" disabled>
+                <button class="copyButton" onclick="copyText('wss://zentic.cc')">Zentic</button>
+            </div>
+            <div class="row">
+                <input value="wss://hyper-network.me" disabled>
+                <button class="copyButton" onclick="copyText('wss://hyper-network.me')">Hyper-Network</button>
+            </div>
+            <div class="row">
+                <input value="wss://blobcraft.duckdns.org" disabled>
+                <button class="copyButton" onclick="copyText('wss://blobcraft.duckdns.org')">Blobcraft</button>
+            </div>
+            <div class="row">
+                <input value="wss://legxndsmp.minecraft.pe" disabled>
+                <button class="copyButton" onclick="copyText('wss://legxndsmp.minecraft.pe')">Legend SMP</button>
+            </div>
+            <div class="row">
+                <input value="wss://asianf4rmer.minecraft.pe" disabled>
+                <button class="copyButton" onclick="copyText('wss://asianf4rmer.minecraft.pe')">Asianf4rmer</button>
+            </div>
+        </div>
+
+        <!--Ad Segment--
+        <br><center><script>
+          var afg={};afg.u=6328;afg.s=4;
+          document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+        </script></center><br>-->
+        
+        <!--Footer--->
+        <footer class="footer">
+          <div class="footer-about">
+            <p>Welcome to Project Hub, your ultimate destination for tailored unblocked games! With over 40 games and counting, we are committed to providing you with a personalized gaming experience that suits your preferences and interests. Our site is constantly updated with new additions to ensure a fresh and exciting selection of games. We highly value user feedback and actively incorporate it to enhance your gaming journey. Get ready to embark on a thrilling adventure as you explore the world of Project Hub, where every game is tailored to you. Let the fun begin!</p>
+          </div>
+          <p>Christian Santangelo <i class="fa-regular fa-copyright"></i></p>
+          <p>Disclaimer: This site should not be used during school/work, and I am not responsible for the users on this site.</p>
+          <div class="footer-link">
+              <a href="https://github.com/unbl0ck">GitHub Profile</a>
+              <a href="../../../privacy.html">Privacy Notice</a>
+          </div>
+        </footer>
+
+        <!--AOS Library-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>
