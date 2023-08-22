@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+		<title>Eaglercraft</title>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script type="text/javascript" src="classes.js"></script>
+		<script type="text/javascript" src="eagswebrtc.js"></script>
+		<script type="text/javascript">
+			window.addEventListener("load", function(){
+				const relayId = Math.floor(Math.random() * 3);
+				window.eaglercraftOpts = {
+					container: "game_frame", assetsURI: "assets.epk", serverWorkerURI: "worker_bootstrap.js", worldsFolder: "MAIN",
+					assetOverrides: {
+						// "title/no-pano-blur.flag": "",
+						"records/wait.mp3": "track.mp3",
+						"records/mellohi.mp3": "track.mp3",
+						"records/far.mp3": "track.mp3",
+						"records/cat.mp3": "track.mp3",
+						"records/ward.mp3": "track.mp3",
+						"records/chirp.mp3": "track.mp3",
+						"records/mall.mp3": "track.mp3",
+						"records/stal.mp3": "track.mp3",
+						"records/strad.mp3": "track.mp3",
+						"records/blocks.mp3": "track.mp3",
+						"records/11.mp3": "track.mp3",
+						"records/13.mp3": "track.mp3",
+						"records/ward.mp3": "track.mp3"
+					},
+					servers: [],
+					relays: [
+						{ addr: "wss://relay.deev.is/", name: "lax1dude relay #1", primary: relayId == 0 },
+						{ addr: "wss://relay.lax1dude.net/", name: "lax1dude relay #2", primary: relayId == 1 },
+						{ addr: "wss://relay.shhnowisnottheti.me/", name: "ayunami relay #1", primary: relayId == 2 }
+					],
+					mainMenu: { splashes: [
+						"More addictive than lemonade!",
+						"Meeting expectations!",
+						"Undocumented!!",
+						"90% bug free!",
+						"Presented by Project-Hub!"
+					], eaglerLogo: false }
+				};
+				(function(){
+					var q = window.location.search;
+					if(typeof q === 'string' && q.startsWith("?")) {
+						q = new URLSearchParams(q);
+						var s = q.get("server");
+						if(s) window.minecraftOpts.push(s);
+					}
+				})();
+				setTimeout(function(){main();}, 2000);
+			});
+		</script>
+	</head>
+	<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
+		<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v52afc6f149f6479b8c77fa569edb01181681764108816" integrity="sha512-jGCTpDpBAYDGNYR5ztKt4BQPGef1P0giN6ZGVUi835kFF88FOmmn8jBQWNgrNd8g/Yu421NdgWhwQoaOPFflDw==" data-cf-beacon='{"rayId":"7c7f56e578753344","version":"2023.4.0","r":1,"b":1,"token":"ef17691dd2754ad48537cd5b4ca6b69f","si":100}' crossorigin="anonymous"></script>
+	</body>
+</html>
