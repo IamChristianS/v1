@@ -22,6 +22,7 @@
 		<link rel="icon" href="favicon.svg">
 		<!--Stylesheets-->
 		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="page_styles/settings.css"> <!--Page-Specific-->
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
 		<link rel="stylesheet" href="hover.css"> <!--Hover.CSS Library-->
@@ -43,110 +44,9 @@
         </script>
 		<!--Scripts-->
 		<script src="startupScript.js"></script>
-		<!--Styling-->
-		<style>
-		    /* Table */
-			.table {
-				margin: 0 1vw;
-			}
-		    .table thead {
-				background-color: #64829e;
-				color: white;
-		    }
-		    .table thead th {
-				padding: .5vw 1vw;
-		    }
-		    .table tbody tr td a {
-				text-decoration: none;
-				color: #2a2391;
-				padding: 1vw;
-		    }
-		    .table tbody tr td a:hover {
-				color: #7e78d1;
-		    }
-			/* Ad Container */
-			.ad-container {
-				padding: 2vw 0;
-				display: flex;
-				justify-content: center;
-			}
-
-		    /* Tab Name Changer w/ Mobile Fix */
-		    @media screen and (max-width: 1280px) {
-				.input-box {
-			    	height: 6vw;
-			    	width: 40vw;
-				}
-		    }
-		    @media screen and (min-width: 1280px) {
-			.input-box {
-			    height: 3vw;
-			    width: 20vw;
-			}
-		    }
-		    .input-box {
-				border: 1px solid transparent;
-				border-radius: 10px;
-				text-align: center;
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-				color: #4f677d;
-		    }
-		    .reset-btn-text {
-				cursor: pointer;
-				text-align: center;
-				padding: 10px 10px;
-				border: 1px solid transparent;
-				border-radius: 10px;
-				color: #4f677d;
-				font-weight: bold;
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-				margin-top: 1vw;
-		    }
-
-		    /* Favicon Buttons w/ Mobile Fix*/
-		    @media screen and (max-width: 1280px) {
-				.icon-btn img {
-					height: 6vw;
-				}
-		    }
-		    @media screen and (min-width: 1280px) {
-				.icon-btn img {
-					height: 4.5vw;
-				}
-		    }
-		    .icon-btn {
-				background: transparent;
-				border: none;
-				cursor: pointer;
-		    }
-		    .icon-btn img {
-				padding: 10px;
-				border: 1px solid transparent;
-				border-radius: 25px;
-				background-color: #8faac4;
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-		    }
-		    .reset-btn {
-				cursor: pointer;
-				text-align: center;
-				padding: 5px 100px;
-				border: 1px solid transparent;
-				border-radius: 15px;
-				color: #4f677d;
-				font-weight: bold;
-				box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-				margin-top: 1vw;
-		    }
-		    .reset-btn img {
-				height: 3vw;
-				padding: 10px;
-				border: 1px solid transparent;
-				border-radius: 25px;
-			}
-		</style>
 	</head>
 	<body>
-		<!--Navbar-->
+		<!--Navbar Start-->
         <div class="nav" style="display: flex;">
             <button class="hvr-underline-from-center"
                 data-aos="fade-down"
@@ -191,10 +91,12 @@
                     style="cursor:pointer"><a>GitHub</a></button>
             </div>
         </div>
+		<!--Navbar End-->
+
 		<!--Header Image-->
 		<img src="img/header.png" alt="Image couldn't load." class="img-header">
 
-		<!--Content-->
+		<!--Tab Changer-->
 		<div class="wide-box" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 		    <h2 style="font-weight:bold;">Favicon Changer</h2>
 		    <center>
@@ -216,12 +118,15 @@
 				</form>
 		    </center>
 		</div>
+
+		<!--Container for Ads + Table-->
 		<div class="ad-container">
-			<!--Ad Segment-->
+			<!--Ad Segment Start-->
 			<script>
 				var afg={};afg.u=6328;afg.s=5;
 				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
 			</script>
+			<!--Ad Segment End-->
 
 			<table class="w3-center w3-border table" style="background-color: snow; margin-bottom: 4vw; margin-top: 1vw;">
 				<thead>
@@ -352,12 +257,15 @@
 				</tbody>
 			</table>
 
-			<!--Ad Segment-->
+			<!--Ad Segment Start-->
 			<script>
 				var afg={};afg.u=6328;afg.s=5;
 				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
 			</script>
+			<!--Ad Segment End-->
 		</div>
+
+		<!--Generalized License-->
 		<center>
 			<h3 style="font-weight:bold;">Copying Rights:</h3>
 			<p>GNU General Public License v3.0</p>
@@ -366,7 +274,7 @@
 			<p>Please head to the GitHub page for more info.</p>
 		</center>
 
-		<!--Footer--->
+		<!--Footer Start-->
         <footer class="footer">
 			<div class="footer-about">
 			  <p>Welcome to Project Hub, your ultimate destination for tailored unblocked games! With over 40 games and counting, we are committed to providing you with a personalized gaming experience that suits your preferences and interests. Our site is constantly updated with new additions to ensure a fresh and exciting selection of games. We highly value user feedback and actively incorporate it to enhance your gaming journey. Get ready to embark on a thrilling adventure as you explore the world of Project Hub, where every game is tailored to you. Let the fun begin!</p>
@@ -378,6 +286,7 @@
 				<a href="privacy.html">Privacy Notice</a>
 			</div>
 		</footer>
+		<!--Footer End-->
 		
 		<!--Save Favicon & Title-->
 		<script>
@@ -400,6 +309,7 @@
 				window.location.reload();
 		    }
 		</script>
+
 		<!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>

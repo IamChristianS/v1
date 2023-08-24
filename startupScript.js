@@ -1,7 +1,7 @@
 // Disables Context (Right-Click) Menu
 document.addEventListener('contextmenu', event => event.preventDefault());
 
-// Update Favicon & Title
+// Update Favicon & Title (ty chatgpt lol)
 window.onload = function() {
     var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
     link.type = 'image/x-icon';
