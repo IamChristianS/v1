@@ -1,0 +1,169 @@
+/* First Time Alert */
+.alert {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: snow;
+}
+.alert h1, p {
+    text-align: center;
+}
+.alert-tos {
+    font-size: 12px;
+}
+.alert button {
+    text-align: center;
+    padding: 5px 100px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #64829e;
+    color: #ffffff;
+}
+
+/* Copied Button */
+.copy-button {
+    position: relative;
+    display: inline-block;
+}
+.copy-button .copy-prompt {
+    position: absolute;
+    top: calc(-100% - 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s, top 0.5s;
+    font-size: 16px;
+    font-family: 'Montserrat', Courier, monospace;
+    letter-spacing: -.5px;
+}
+.copy-button .copy-prompt::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+.copy-button.clicked .copy-prompt {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Popular Game Showcase */
+.popular-games-title {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: -5px;
+  background-color: #708CA8;
+  width: 20vw;
+  border-radius: 1000px;
+  font-family: 'Montserrat', Courier, monospace;
+}
+@media screen and (max-width: 1500px) {
+    .popular-games-title {
+      width: 25vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .popular-games-title {
+      width: 35vw;
+    }
+}
+@media screen and (max-width: 768px) {
+    .popular-games-title {
+      width: 75%;
+    }
+}
+.popular-games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 20vw;
+}
+.popular-games div {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  background-color: #708CA8;
+  border-radius: 1vw;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+.popular-games div p {
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Montserrat', Courier, monospace;
+  margin: 10px 0 0;
+  font-size: x-large;
+}
+.popular-games div img {
+  width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.popular-games div:hover {
+  background-color: #5d7994;
+}
+@media screen and (max-width: 1000px) {
+  .popular-games {
+    margin: 20px 8vw;
+  }
+  .popular-games div {
+    border-radius: 2vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .popular-games div p {
+    font-size: large;
+  }
+  .popular-games {
+    margin: 20px 2vw;
+  }
+}
+
+/* Frequently Asked Questions */
+.faq-box {
+  background: linear-gradient(to bottom, #7b99b6, #6785a1);
+  color: #ffffff;
+  max-width: 40vw;
+  border-radius: 1vw;
+  padding: 1px 0;
+  margin: 1vh 0;
+}
+.faq-title {
+  text-align: left;
+  padding: 0 2vw;
+  font-weight: bold;
+  font-size: x-large;
+}
+.faq-qna {
+  text-align: left;
+  padding: 0 5vw;
+  font-size: large;
+  margin-top: -1vw;
+}
+@media screen and (max-width: 1200px) {
+  .faq-box {
+    max-width: 60vw;
+    border-radius: 2vw;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .faq-box {
+    max-width: 75vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq-box {
+    max-width: 90vw;
+  }
+}

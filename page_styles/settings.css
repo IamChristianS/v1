@@ -1,0 +1,98 @@
+/* Table */
+.table {
+    margin: 0 1vw;
+}
+.table thead {
+    background-color: #64829e;
+    color: white;
+}
+.table thead th {
+    padding: .5vw 1vw;
+}
+.table tbody tr td a {
+    text-decoration: none;
+    color: #2a2391;
+    padding: 1vw;
+}
+.table tbody tr td a:hover {
+    color: #7e78d1;
+}
+/* Ad Container */
+.ad-container {
+    padding: 2vw 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Tab Name Changer w/ Mobile Fix */
+.input-box {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: #4f677d;
+}
+.reset-btn-text {
+    cursor: pointer;
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #4f677d;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1vw;
+}
+@media screen and (max-width: 1280px) {
+    .input-box {
+        height: 6vw;
+        width: 40vw;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .input-box {
+        height: 3vw;
+        width: 20vw;
+    }
+}
+
+/* Favicon Buttons w/ Mobile Fix*/
+.icon-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.icon-btn img {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: #8faac4;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.reset-btn {
+    cursor: pointer;
+    text-align: center;
+    padding: 5px 100px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    color: #4f677d;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 1vw;
+}
+.reset-btn img {
+    height: 3vw;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 25px;
+}
+@media screen and (max-width: 1280px) {
+    .icon-btn img {
+        height: 6vw;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .icon-btn img {
+        height: 4.5vw;
+    }
+}
