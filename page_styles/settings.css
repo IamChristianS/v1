@@ -24,7 +24,7 @@
     justify-content: center;
 }
 
-/* Tab Name Changer w/ Mobile Fix */
+/* Tab Name Changer */
 .input-box {
     border: 1px solid transparent;
     border-radius: 10px;
@@ -56,7 +56,7 @@
     }
 }
 
-/* Favicon Buttons w/ Mobile Fix*/
+/* Favicon Buttons */
 .icon-btn {
     background: transparent;
     border: none;

@@ -16,23 +16,23 @@
 -->
 <!DOCTYPE html>
 <html>
-    <head>
-        <!--Display-->
-        <title>Project-Hub | Contact</title>
-        <link rel="icon" href="favicon.svg">
-        <!--Stylesheets-->
-        <link rel="stylesheet" href="stylesheet.css">
-        <link rel="stylesheet" href="page_styles/contact.css"> <!--Page-Specific-->
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
-        <link rel="stylesheet" href="hover.css"> <!--Hover.CSS Library-->
+	<head>
+		<!--Display-->
+		<title>Project-Hub | Apps</title>
+		<link rel="icon" href="favicon.svg">
+		<!--Stylesheets-->
+		<link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="page_styles/apps.css"> <!--Page-Specific-->
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+		<link rel="stylesheet" href="hover.css"> <!--Hover.CSS Library-->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"> <!--AOS Library-->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
-        <!--Meta-->
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--Google Analytics-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<script src="https://kit.fontawesome.com/4139823eac.js" crossorigin="anonymous"></script>
+		<!--Meta-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--Google Analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -41,11 +41,18 @@
 
             gtag('config', 'G-M9KJ1XPKLF');
         </script>
-        <!--Scripts-->
+		<!--Scripts-->
 		<script src="startupScript.js"></script>
-    </head>
-    <body>
-        <!--Navbar Start-->
+		<!--Styling-->
+		<style>
+			/* Ad Segment */
+			.ad-segment {
+				margin: 1vw;
+			}
+		</style>
+	</head>
+	<body>
+		<!--Navbar Start-->
         <div class="nav" style="display: flex;">
             <button class="hvr-underline-from-center"
                 data-aos="fade-down"
@@ -63,7 +70,7 @@
                 data-aos-once="true"
                 onclick="window.location.href='games.html'"
                 style="cursor:pointer"><a>Games</a></button>
-            <button class="hvr-underline-from-center"
+            <button class="hvr-underline-from-center active"
                 data-aos="fade-down"
                 data-aos-delay="50"
                 data-aos-duration="900"
@@ -71,7 +78,7 @@
                 data-aos-once="true"
                 onclick="window.location.href='apps.html'"
                 style="cursor:pointer"><a>Apps</a></button>
-            <button class="hvr-underline-from-center active"
+            <button class="hvr-underline-from-center"
                 data-aos="fade-down"
                 data-aos-delay="50"
                 data-aos-duration="800"
@@ -101,56 +108,57 @@
 		<!--Navbar End-->
 
         <!--Header Image-->
-        <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <img src="img/header.png" alt="Image couldn't load." class="img-header" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 1vw;">
 
-        <!--Content-->
-        <div class="email-container">
-            <h2 >Our Official E-Mail Address is:
-                <a href="mailto:project.hub.games@gmail.com?subject=What%20do%20you%20wish%20to%20discuss%3F&body=Please%20put%20in-depth%20what%20you%20are%20wanting%20to%20talk%20about.%20I%20promise%20I%20don't%20bite...%20yet.">project.hub.games@gmail.com</a>
-            </h2>
-            <p>If you see any other email try to contact you, whilst trying to imitate as us, please report them to our email above.</p>
+		<!--Ad Segment Start--
+        <br><center><script>
+			var afg={};afg.u=6328;afg.s=4;
+			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+		</script></center><br>
+		<--Ad Segment End-->
+
+        <div class="disclaimer">
+            <h2>Certain apps may NOT be working!</h2>
+            <p>Due to the complexity of these apps, we are unable to host some of them independently. Unfortunately, this means that embedded apps are able to be blocked. If you encounter a blocked app, please use our <a>Contact Page</a> and talk to us about it.</a></p>
         </div>
 
-        <center class="form-container">
-            <!--Ad Segment Start-->
-			<script>
-				var afg={};afg.u=6328;afg.s=5;
-				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-			</script>
-            <!--Ad Segment End-->
-            
-            <div class="form-box">
-                <p class="form-title">Game Request</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScuv3_LcWKJ-8SJRzdFT48ml4S29DI9up24Bp5CA8FLJA-mnw/viewform?embedded=true"
-                    class="form"
-                    width="100%"
-                    height="800"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0">Loading…
-                </iframe>
-            </div>
-            <div class="form-box">
-                <p class="form-title">Contact Form</p>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesfgdrPZu85nHKplMhHl4CKwu9pkjPEfsSNSP3ZE-jkExDuw/viewform?embedded=true"
-                    class="form"
-                    width="100%"
-                    height="800"
-                    frameborder="0"
-                    marginheight="0"
-                    marginwidth="0">Loading…
-                </iframe>
-            </div>
-              
-            <!--Ad Segment Start-->
-			<script>
-				var afg={};afg.u=6328;afg.s=5;
-				document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-			</script>
-            <!--Ad Segment End-->
-        </center>
+		<!--App Library-->
+		<div class="app-grid">
+			<div class="app-item">
+				<a href="apps/chatgpt/index.html" target="_blank">
+					<img src="apps/img/chatgpt.png" alt="ChatGPT">
+				</a>
+				<a class="app-links" href="apps/chatgpt/index.html" target="_blank"><strong>ChatGPT</strong></a>
+			</div>
+            <div class="app-item">
+				<a href="apps/desmos/index.html" target="_blank">
+					<img src="apps/img/desmos.png" alt="Desmos">
+				</a>
+				<a class="app-links" href="apps/desmos/index.html" target="_blank"><strong>Desmos</strong></a>
+			</div>
+            <div class="app-item">
+				<a href="apps/mathway/index.html" target="_blank">
+					<img src="apps/img/mathway.png" alt="Mathway">
+				</a>
+				<a class="app-links" href="apps/mathway/index.html" target="_blank"><strong>Mathway</strong></a>
+			</div>
+            <!--Copy & Paste Empty Slot-->
+            <div class="app-item" id="incomplete">
+				<a href="apps/appPath/index.html" target="_blank">
+					<img src="apps/img/placeholder.png" alt="appName">
+				</a>
+				<a class="app-links" href="apps/gamePath/index.html" target="_blank"><strong>appName</strong></a>
+			</div>
+		</div>
 
-        <!--Footer Start-->
+		<!--Ad Segment Start--
+        <br><center><script>
+			var afg={};afg.u=6328;afg.s=4;
+			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+		</script></center><br>
+		<--Ad Segment End-->
+		
+		<!--Footer Start-->
         <footer class="footer">
 			<div class="footer-about">
 			  <p>Welcome to Project Hub, your ultimate destination for tailored unblocked games! With over 60 games and counting, we are committed to providing you with a personalized gaming experience that suits your preferences and interests. Our site is constantly updated with new additions to ensure a fresh and exciting selection of games. We highly value user feedback and actively incorporate it to enhance your gaming journey. Get ready to embark on a thrilling adventure as you explore the world of Project Hub, where every game is tailored to you. Let the fun begin!</p>
@@ -162,12 +170,12 @@
 				<a href="privacy.html">Privacy Notice</a>
 			</div>
 		</footer>
-        <!--Footer End-->
-        
-        <!--AOS Library-->
+		<!--Footer End-->
+		
+		<!--AOS Library-->
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
         </script>
-    </body>
+	</body>
 </html>
