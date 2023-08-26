@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ace Attorney</title>
+        <!--Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M9KJ1XPKLF');
+        </script>
+        <!--Google Analytics-->
+    </head>
+    <body>
+        <desmond-player id="player"></desmond-player>
+        <script src="../../desmond/desmond.min.js"></script>
+        <script>
+            document.getElementById("player").loadURL("aceattorney.nds");
+        </script>
+    </body>
+</html>
