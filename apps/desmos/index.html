@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Desmos</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<script src="https://www.desmos.com/api/v1.4/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6"></script>-->
+        <script type="text/javascript" src="calculator.js"></script>
+        <!--Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M9KJ1XPKLF');
+        </script>
+        <!--Google Analytics-->
+    </head>
+    <body style="margin: 0;">
+        <div id="calculator" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0;"></div>
+        <script>            
+            window.Calc = Desmos.GraphingCalculator(document.querySelector('#calculator'));
+            
+            function loadDesmosState(jsonString){
+                var state = JSON.parse(jsonString);
+                window.Calc.setState(state);
+            };
+            
+            document.querySelector('#file').onchange = function(e){
+                let file = e.target.files[0];
+                name = file.name.replace(/\.(json|JSON)$/, '');
+                document.querySelector('#title').value = name;
+                document.querySelector('head>title').text = name;
+                let reader = new FileReader();
+                reader.onload = function(e){
+                    loadDesmosState(e.target.result);
+                };
+                reader.readAsText(file);
+            };
+            
+            document.querySelector('#load').onclick = function(e){
+                document.querySelector('#file').click();
+            };
+            
+            function download(content, fileName, contentType) {
+                let a = document.createElement('a');
+                a.href = URL.createObjectURL(new Blob([content], {type: contentType}));
+                a.download = fileName;
+                a.click();
+            };
+            
+            document.querySelector('#save').onclick = function(e){
+                let state = JSON.stringify(window.Calc.getState());
+                let title = document.querySelector('#title').value;
+                download(state, title+'.json', 'text/plain');
+            };
+        </script>
+        <!--Anchor Ad Start-->
+		<script>
+			var afg={};afg.u=6328;afg.s=31;
+			afg.anchor="bottom";
+			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+		</script>
+		<!--Anchor Ad End-->
+    </body>
+</html>
