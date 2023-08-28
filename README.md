@@ -6,8 +6,8 @@
 <!-- Badges -->
 <p align="center">
   <a href="https://opensource.org/licenses/"><img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style=for-the-badge&logo=appveyor"></a>
-  <a href="https://github.com/unbl0ck/project-hub/network/members"><img src="https://img.shields.io/github/forks/unbl0ck/project-hub?style=for-the-badge&logo=github"></a>
-  <img src="https://img.shields.io/github/last-commit/unbl0ck/project-hub?logo=git&style=for-the-badge">
+  <a href="https://github.com/unbl0ck/project-hub/network/members"><img src="https://img.shields.io/github/forks/unbl0ck/unbl0ck.github.io?style=for-the-badge&logo=github"></a>
+  <img src="https://img.shields.io/github/last-commit/unbl0ck/unbl0ck.github.io?logo=git&style=for-the-badge">
   <img src="https://img.shields.io/maintenance/yes/2023?style=for-the-badge">
 </p>
 
@@ -24,16 +24,18 @@
 - Constantly Updating
 - Open-Source
 
+<!-- About Me -->
 # Hi, I'm Christian!
 
 ## About Me
 <p>Hey, I'm Christian! 👋</p>
 <p>I'm an amateur developer, and high school student passionate about web design and computer science. 🌟</p>
 <p>I like working on small hobby projects that allow me to try new things and sharpen my skills. 🎨</p>
-<p>My main project is Project-Hub (Go check it out!). 🚀</p>
+<p>My main project is <a href="https://unbl0ck.github.io/">Project-Hub</a> (Go check it out!). 🚀</p>
 <p>It's a hub for running games whilst bypassing extension-blocking capabilities. 🎮</p>
 <p>I'm constantly updating, and improving this project, so go check it out. 🔄</p>
 
+<!-- Screenshots -->
 ## Screenshots 📷
 <div align="center">
   <img src="https://i.ibb.co/rGb9k0n/screenshot1.png" alt="Games Page" width="300">
@@ -44,6 +46,7 @@
   <img src="https://i.ibb.co/TrfPyVb/screenshot4.png" alt="Slope" width="300">
 </div>
 
+<!-- Contributions -->
 ## Contributing
 Contributions are welcome! If you have any bug reports, feature requests, or suggestions, please open an issue or submit a pull request.
 You can also submit a contact form on the [Contact](https://unbl0ck.github.io/contact.html) page of the site.
@@ -58,4 +61,5 @@ Special thanks to the following projects and libraries:
 
 ---
 
+<!-- Disclaimer -->
 **Important Note**: This site should not be used in school or workplace environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.
