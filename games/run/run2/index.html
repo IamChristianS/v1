@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/embed.css">
+		<meta name="csrf-token" content="rRt7iDPW1usInp8RS5n2SeShtZJpc5JpHtdnt0bq" />
+		<title>Run 2</title>
+		<script language="javascript">
+			var GAME = {
+					name: "Run 2",
+					slug: 'run-2',
+					src: '',
+					width: 1000,
+					height: 800,
+					extension: 'SWF',
+					paramOptionsCode: '',
+					embedOptionsCode: '',
+					playable: 1,
+					resizable: 1,
+					updatedAt: '2022-10-20 17:38:20',
+					avm: '2',
+					reqEmulator: null,
+					fileType: 2
+				};
+				/* MORE Settings */
+				try{
+						GAME.src = 'https://unbl0ck.github.io/games/run/run2/swf/run2.swf';
+						GAME.fileType = 1;
+				}catch(e){
+					console.warn(e);
+				};
+				try{
+					var params = JSON.parse('{"wmode":"opaque", "allowNetworking": "internal", "allowScriptAccess": "No"}');
+						for(var i in params){
+							GAME.paramOptionsCode += '<param name="'+i+'" value="'+ params[i] +'"/>';
+							GAME.embedOptionsCode += ' '+i+'="'+params[i]+'"';
+						}
+						console.log(GAME.embedOptionsCode, GAME.paramOptionsCode);
+				}catch(e){
+					console.warn('Params: ', e);
+				};
+			var request = new URLSearchParams(window.location.search);
+				GAME.reqEmulator = request.get('emulator');
+				if (!GAME.reqEmulator) {
+					GAME.reqEmulator = null;
+				};
+			var langs = {
+				play_now: "PLAY NOW",
+				new_window: "New Window",
+				loading: "Loading...",
+			};
+		</script>
+		<script src="js/flash_detect.js"></script>
+		<script src="js/jquery.min.js"></script>
+
+		<!--Google Analytics-->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-M9KJ1XPKLF');
+        </script>
+        <!--Google Analytics-->
+	</head>
+	<body>
+		<div class="embed-code" style="height:100vh">
+			<link rel="stylesheet" href="./waflash/waflash-style.css" />
+			<div id="waflashContainer">
+				<canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
+				<div id="waflashStatus" style="display: none;">Playing...</div>
+				<script>
+					var ua = navigator.userAgent.toLowerCase();
+					if ( (navigator.appName == 'Netscape' && ua.indexOf('trident') != -1) || (ua.indexOf("msie") != -1)) {
+						var waf = document.getElementById('waflashStatus');
+						waf.style.display = 'block';
+						waf.innerText = 'Playing...';
+					}
+				</script>
+				<script type="module" crossorigin="anonymous">
+					let is_mobile = /Mobi/i.test(window.navigator.userAgent);
+					if (is_mobile) {
+						function scrollToSubject() {
+							try {
+								window.scrollTo({
+									top: 100,
+									left: 0,
+									behavior: 'smooth'
+								});
+							} catch (e) {}
+						}
+						scrollToSubject();
+						window.addEventListener("orientationchange", function() {
+							setTimeout(scrollToSubject, 100);
+						});
+					} else {
+						document.getElementById('canvas').focus();
+					}
+					document.getElementById('canvas').addEventListener("keydown", function(ev) {
+						ev.preventDefault();
+						ev.stopPropagation();
+					});
+					document.getElementById('canvas').addEventListener("click", function() {
+						document.getElementById('canvas').focus();
+					});
+					document.addEventListener("mousedown", (function() {
+						const canvasElement = document.getElementById('canvas');
+						let focused = false;
+						return function(ev) {
+							if (ev.target == canvasElement) {
+								if (!focused) {
+									canvasElement.focus();
+									focused = true;
+								}
+							} else {
+								if (focused) {
+									focused = false;
+								}
+							}
+							return true;
+						}
+					})());
+					import {
+						createWaflash
+					} from './waflash/waflash-player.min.js';
+					
+					if(!FlashDetect.installed || GAME.reqEmulator == 'waflash'){
+						var _csrfToken = $('meta[name="csrf-token"]').attr('content');
+							$.get('./waflash/waflash.js', {'_token': _csrfToken}, function(res){
+								eval(res);
+							});
+					}
+				</script>
+			</div>
+		</div>
+		<script src="js/embed.js"></script>
+	</body>
+</html>
