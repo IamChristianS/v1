@@ -17,10 +17,10 @@
 
 ## Features
 - Extensive Library of Games
+- Library of Free Apps
 - Multiple Emulators
 - Unblocked Games
-- Tab Favicon Changer
-- Tab Title Changer
+- Tab Cloaking
 - Constantly Updating
 - Open-Source
 
