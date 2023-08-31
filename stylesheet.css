@@ -46,11 +46,14 @@ body {
     padding: 50px 50px;
     color: #ffffff;
     justify-content: center;
+    text-align: center;
 }
 .wide-box-seperator {
     background-color: #ffffff;
+    opacity: .75;
     height: 2px;
     width: 50vw;
+    justify-content: center;
 }
 
 /* Navbar */
