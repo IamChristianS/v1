@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../../../waflash/css/embed.css">
+		<link rel="stylesheet" href="css/embed.css">
 		<meta name="csrf-token" content="rRt7iDPW1usInp8RS5n2SeShtZJpc5JpHtdnt0bq" />
 		<title>Learn to Fly 3</title>
 		<script language="javascript">
@@ -50,8 +50,8 @@
 				loading: "Loading...",
 			};
 		</script>
-		<script src="../../../waflash/js/flash_detect.js"></script>
-		<script src="../../../waflash/js/jquery.min.js"></script>
+		<script src="js/flash_detect.js"></script>
+		<script src="js/jquery.min.js"></script>
 
 		<!--Google Analytics-->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
@@ -66,7 +66,7 @@
 	</head>
 	<body>
 		<div class="embed-code" style="height:100vh">
-			<link rel="stylesheet" href="../../../waflash/waflash/waflash-style.css" />
+			<link rel="stylesheet" href="../../../waflash/waflash-style.css" />
 			<div id="waflashContainer">
 				<canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
 				<div id="waflashStatus" style="display: none;">Playing...</div>
@@ -123,17 +123,17 @@
 					})());
 					import {
 						createWaflash
-					} from '../../../waflash/waflash/waflash-player.min.js';
+					} from '../../../waflash/waflash-player.min.js';
 					
 					if(!FlashDetect.installed || GAME.reqEmulator == 'waflash'){
 						var _csrfToken = $('meta[name="csrf-token"]').attr('content');
-							$.get('../../../waflash/waflash/waflash.js', {'_token': _csrfToken}, function(res){
+							$.get('../../../waflash/waflash.js', {'_token': _csrfToken}, function(res){
 								eval(res);
 							});
 					}
 				</script>
 			</div>
 		</div>
-		<script src="../../../waflash/js/embed.js"></script>
+		<script src="js/embed.js"></script>
 	</body>
 </html>
