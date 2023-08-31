@@ -7,17 +7,13 @@
 		<title>Learn to Fly 3</title>
 		<script language="javascript">
 			var GAME = {
-					name: "Learn to Fly 3",
-					slug: 'learn-to-fly-3',
-					src: '',
+					name: "Run 2",
+					slug: 'run-2',
 					width: 1000,
 					height: 800,
 					extension: 'SWF',
-					paramOptionsCode: '',
-					embedOptionsCode: '',
 					playable: 1,
 					resizable: 1,
-					updatedAt: '2022-10-20 17:38:20',
 					avm: '2',
 					reqEmulator: null,
 					fileType: 2
@@ -66,7 +62,7 @@
 	</head>
 	<body>
 		<div class="embed-code" style="height:100vh">
-			<link rel="stylesheet" href="../../../waflash/waflash-style.css" />
+			<link rel="stylesheet" href="waflash/waflash-style.css" />
 			<div id="waflashContainer">
 				<canvas class="waflashCanvas" id="canvas" tabindex="1"></canvas>
 				<div id="waflashStatus" style="display: none;">Playing...</div>
@@ -123,11 +119,11 @@
 					})());
 					import {
 						createWaflash
-					} from '../../../waflash/waflash-player.min.js';
+					} from 'waflash/waflash-player.min.js';
 					
 					if(!FlashDetect.installed || GAME.reqEmulator == 'waflash'){
 						var _csrfToken = $('meta[name="csrf-token"]').attr('content');
-							$.get('../../../waflash/waflash.js', {'_token': _csrfToken}, function(res){
+							$.get('waflash/waflash.js', {'_token': _csrfToken}, function(res){
 								eval(res);
 							});
 					}
