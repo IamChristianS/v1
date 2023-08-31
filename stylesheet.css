@@ -26,7 +26,6 @@ body {
 }
 
 /* Widebox */
-/* Description Box */
 @media only screen and (max-width: 850px) {
     .wide-box h2 {
         font-size: 22px;
@@ -45,10 +44,13 @@ body {
     height: auto;
     background: linear-gradient(#708CA8, #5d7994);
     padding: 50px 50px;
-}
-.wide-box h2, .wide-box p {
-    text-align: center;
     color: #ffffff;
+    justify-content: center;
+}
+.wide-box-seperator {
+    background-color: #ffffff;
+    height: 2px;
+    width: 50vw;
 }
 
 /* Navbar */
