@@ -17,10 +17,10 @@
 
 ## Features
 - Extensive Library of Games
+- Library of Free Apps
 - Multiple Emulators
 - Unblocked Games
-- Tab Favicon Changer
-- Tab Title Changer
+- Tab Cloaking
 - Constantly Updating
 - Open-Source
 
@@ -56,6 +56,7 @@ Each game I curate can be found in the ***Settings*** of the site.
 
 Special thanks to the following projects and libraries:
 - [Ruffle](https://ruffle.rs) - Flash emulator
+- [WAFlash](https://github.com/vidkidz/waflash) - Secondary Flash emulator
 - [IodineGBA](https://github.com/taisel/IodineGBA) - Game Boy Advance emulator
 - [3kh0](https://github.com/3kh0) - Some Game Ports (amazing person btw)
 
