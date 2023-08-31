@@ -22,7 +22,7 @@ body {
     overflow-x: hidden;
 }
 #incomplete, #incompatible {
-	display: none;	
+	display: none;
 }
 
 /* Widebox */
@@ -43,9 +43,8 @@ body {
     width: 100%;
     height: auto;
     background: linear-gradient(#708CA8, #5d7994);
-    padding: 50px 50px;
+    padding: 2.5vw 5vw;
     color: #ffffff;
-    justify-content: center;
     text-align: center;
 }
 .wide-box-seperator {
@@ -53,7 +52,7 @@ body {
     opacity: .75;
     height: 2px;
     width: 50vw;
-    justify-content: center;
+    margin: 0 auto;
 }
 
 /* Navbar */
