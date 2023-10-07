@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+
+	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>Red Ball 4</title>
-
 	<link rel="manifest" href="appmanifest.json">
 
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png">
 
 	<style type="text/css">
 		* {
@@ -32,15 +36,23 @@
 </head>
 <body>
 	<div id="fb-root"></div>
+	<script>
+		(function(){
+			if (window.location.protocol.substr(0, 4) === "file")
+			{
+				alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+			}
+		})();
+	</script>
+
 	<div id="c2canvasdiv">
 		<canvas id="c2canvas" width="854" height="480">
-			<h1>Your browser does not appear to support HTML5.</a>
+			<h1>Your browser does not appear to support HTML5.</h1>
 		</canvas>
 	</div>
 
 	<script src="jquery-3.4.1.min.js"></script>
 	<script src="c2runtime.js"></script>
-
     <script>
 		jQuery(document).ready(function ()
 		{
@@ -63,11 +75,11 @@
 		{
 			console.warn("Failed to register service worker: ", e);
 		};
+
 		window.C2_RegisterSW = function C2_RegisterSW()
 		{
 			if (!navigator.serviceWorker)
 				return;
-
 			try {
 				navigator.serviceWorker.register("sw.js", { scope: "./" })
 				.then(function (reg)
@@ -82,28 +94,15 @@
 			}
 		};
     </script>
+
     <style>
-        body, html {
-			margin: 0 auto;
-			padding: 0 auto;
-			width: 100%;
-			height: 100%;
-			overflow: hidden
-		}
-		#adsbox {
-			position: fixed;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			z-index: 999;
-			display: none;}
+        body,html{margin:0 auto;padding:0 auto;width:100%;height:100%;overflow:hidden}#adsbox{position:fixed;top:0;right:0;bottom:0;left:0;z-index:999;display:none;}
     </style>
 
     <script src="js/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="js/yandex/yandex-sdk-v2.js"></script>
-    <div id="adsbox" style="display: block;"></div>
 
+    <div id="adsbox" style="display: block;"></div>
     <script type="text/javascript">
          $("#adsbox").click(function () {
              ShowYaBanner();
@@ -114,8 +113,8 @@
          window.setInterval(function(){
              $('#adsbox').show();
          }, 60000);
-    </script>
-    <script>
+      </script>
+      <script>
          if (YaGames)
          {
            YaGames.init(
