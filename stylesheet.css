@@ -30,12 +30,12 @@ body {
     .wide-box h2 {
         font-size: 22px;
     }
-    .wide-box p {
+    .wide-box p, .wide-box a {
         font-size: 18px;
     }
 }
 @media only screen and (min-width: 850px) {
-    .wide-box p {
+    .wide-box p, .wide-box a {
         font-size: 22px;
     }
 }
