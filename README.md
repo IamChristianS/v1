@@ -10,15 +10,16 @@
   <img src="https://img.shields.io/github/last-commit/unbl0ck/unbl0ck.github.io?logo=git&style=for-the-badge">
   <img src="https://img.shields.io/maintenance/yes/2023?style=for-the-badge">
 </p>
-
 <!-- Project Description -->
 <h1 align="center">Project-Hub</h1>
 <p align="center">This project serves as a hub for running games (web or ports) without being detected by extension blocking capabilities.</p>
 
 <p align="center">Check out our sister sites:</p>
-<a href="https://unbl0ck.github.io/" align="center">https://unbl0ck.github.io/</a><br>
-<a href="https://unb1ock.github.io/" align="center">https://unb1ock.github.io/</a><br>
-<a href="https://unb10ck.github.io/" align="center">https://unb10ck.github.io/</a><br>
+<a href="https://unbl0ck.github.io/">https://unbl0ck.github.io/</a><br>
+<a href="https://unb1ock.github.io/">https://unb1ock.github.io/</a><br>
+<a href="https://unb10ck.github.io/">https://unb10ck.github.io/</a><br>
+<a href="https://ubghub.netlify.app/">https://ubghub.netlify.app/</a><br>
+<a href="https://ubghub.vercel.app/">https://ubghub.vercel.app/</a><br>
 
 ## Features
 - Extensive Library of Games
@@ -58,6 +59,5 @@ Special thanks to the following projects and libraries:
 - [3kh0](https://github.com/3kh0) - Some Game Ports (amazing person btw)
 
 ---
-
 <!-- Disclaimer -->
 **Important Note**: This site should not be used in school or workplace environments where it is disallowed. By using this site, you agree that you are in a location that allows its usage, and any discretion is up to the user.
