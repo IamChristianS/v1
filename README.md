@@ -18,8 +18,8 @@
 <a href="https://unbl0ck.github.io/">https://unbl0ck.github.io/</a><br>
 <a href="https://unb1ock.github.io/">https://unb1ock.github.io/</a><br>
 <a href="https://unb10ck.github.io/">https://unb10ck.github.io/</a><br>
-<a href="https://ubghub.netlify.app/">https://ubghub.netlify.app/</a><br>
-<a href="https://ubghub.vercel.app/">https://ubghub.vercel.app/</a><br>
+<a href="https://ubghub.netlify.app/">https://ubghub.netlify.app/ (OUTDATED)</a><br>
+<a href="https://ubghub.vercel.app/">https://ubghub.vercel.app/ (OUTDATED)</a><br>
 
 ## Features
 - Extensive Library of Games
