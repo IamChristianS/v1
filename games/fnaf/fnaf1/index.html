@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<style type="text/css">
+		body {
+			background: #000000;
+			margin: 0;
+			overflow: hidden;
+		}
+		p { color: #FF0000 }
+		#MMFCanvas {
+			width: 100vw;
+			height: 100vh;
+		}
+	</style>
+	<head>
+		<title>FNAF 1</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<script>
+			if (!document.createElement("canvas").getContext)
+			{
+				window.open("http://www.clickteam.com/html5-fallback", "_self");
+			}
+		</script>
+		<script src="src/Runtime.js"></script>
+		<!--Google Analytics-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+	
+			gtag('config', 'G-M9KJ1XPKLF');
+		</script>
+		<!--Google Analytics-->
+	</head>
+	<body>
+		<canvas id="MMFCanvas" width="1280" height="720">
+			<p>Your browser does not support Canvas.</p>
+		</canvas>
+		<script>
+			window.addEventListener("load", windowLoaded, false);
+			function windowLoaded()
+			{
+				new Runtime("MMFCanvas", "resources/FNAF1.cch");
+			}
+		</script>
+		<!--Anchor Ad Start-->
+		<script>
+			var afg={};afg.u=6328;afg.s=31;
+			afg.anchor="bottom";
+			document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+		  </script>
+		  <!--Anchor Ad End-->
+	</body>
+</html>
