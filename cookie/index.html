@@ -1,22 +1,41 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
+	<!--Google Analytics-->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+  
+		gtag('config', 'G-M9KJ1XPKLF');
+	</script>
+	<!--Google Analytics-->
 <!-- external -->
 <script type="text/javascript">
     window.cookieconsent_options = {"message":"Unsurprisingly, this website uses cookies for ads and traffic analysis.","dismiss":"Got it!","learnMore":"Learn more","link":"//orteil.dashnet.org/cookieconsentpolicy.html","target":"_blank","theme":"//orteil.dashnet.org/cookieconsent.css","domain":"dashnet.org"};
 </script>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-<!-- /external -->
-<!--Google Analytics-->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-M9KJ1XPKLF"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'G-M9KJ1XPKLF');
-</script>
-<!--Google Analytics-->
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
+
+<!--<link href="https://fonts.googleapis.com/css?family=Kavoon&subset=latin,latin-ext" rel="stylesheet" type="text/css">-->
+<link href='https://fonts.googleapis.com/css?family=Merriweather:900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '357399801355203');
+	fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=357399801355203&ev=PageView&noscript=1"></noscript>
+<!-- end code -->
+<!-- /external -->
+
 <title>Cookie Clicker</title>
 <!--
 Code and graphics copyright Orteil, 2013-2023
@@ -37,8 +56,16 @@ var App=typeof App==='undefined'?0:App;
 <script  src="main.js?v=10"></script>
 
 <!-- ad -->
-<script src="showads.js"></script>
+<script src="showads.js"></script><!-- this just detects adblockers so we can adjust the layout and play nice -->
 <!-- /ad -->
+
+<!--[if IE]>
+<style type="text/css">
+	#ifIE9{display:block;}
+</style>
+<![endif]-->
+
+<!--[if lt IE9]><script src="excanvas.compiled.js"></script><![endif]-->
 </head>
 <body>
 
@@ -144,17 +171,14 @@ var App=typeof App==='undefined'?0:App;
 		</div>
 		
 		<div id="sectionRight" class="inset">
-
 			<!-- ad -->
 			<div class="ifNoAds" style="width:300px;text-align:center;padding:8px 0px;background:rgba(0,0,0,0.95);font-size:10px;opacity:0.5;text-shadow:0px 0px 2px #000,0px 1px 0px #000;text-align:center;">
 				Cookie Clicker is mainly supported by ads.<br>Consider unblocking our site or checking out our <a href="https://www.patreon.com/dashnet" target="_blank">Patreon</a>!
 			</div>
 			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
-				<script>var afg={};afg.u=6328;afg.s=1;
-					document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");</script>
+			
 			</div>
 			<!-- /ad -->
-
 			<div id="store">
 				<div id="storeTitle" class="inset title zoneTitle">Store</div>
 				<div id="toggleUpgrades" class="storeSection upgradeBox"></div>
@@ -163,19 +187,18 @@ var App=typeof App==='undefined'?0:App;
 				<div id="upgrades" class="storeSection upgradeBox"></div>
 				<div id="products" class="storeSection"></div>
 			</div>
-
 			<!-- ad -->
-			<div style="height:32px;"></div>
 			<div id="detectAds" class="adBanner" style="background:transparent;width:1px;height:1px;"></div>
 			<div id="support" style="margin-top:130px;">
 				<div style="position:relative;">
 					<div style="position:relative;z-index:100;min-height:250px;">
-						<script>var afg={};afg.u=6328;afg.s=9;
-						document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");</script>
+						<div style="height:32px;"></div>
+						<div style="height:32px;"></div>
 					</div>
 				</div>
 			</div>
 			<!-- /ad -->
+		</div>
 		
 		<div id="tooltipAnchor"><div id="tooltip" class="framed" onMouseOut="Game.tooltip.hide();"></div></div>
 		<div id="preloadImages" style="display:none;"></div>
@@ -183,10 +206,10 @@ var App=typeof App==='undefined'?0:App;
 </div>
 <!--Anchor Ad Start-->
 <script>
-	var afg={};afg.u=6328;afg.s=31;
-	afg.anchor="bottom";
-	document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
-</script>
-<!--Anchor Ad End-->
+    var afg={};afg.u=6328;afg.s=31;
+    afg.anchor="bottom";
+    document.write("<sc"+"ript src='//js.adforgames.com/cd.js'></sc"+"ript>");
+  </script>
+  <!--Anchor Ad End-->
 </body>
 </html>
